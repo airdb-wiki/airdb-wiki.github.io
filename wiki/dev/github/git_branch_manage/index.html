@@ -1,0 +1,124 @@
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.83.1"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Git 分支的约束和管理 #  来源： dxyoo7
+一、分支说明 #  master #    主分支，用作生产分支，里面的代码是准备部署到生产环境的。master 永远处于稳定状态，这个分支代码可以随时用来部署。 master 不提交代码，只合并代码。 合并代码到 master 的操作，由项目对应的集成管理员专人负责。 各分支要定期将 master 代码合并进来，避免后续分支合并到 master 时容易产生冲突，以减轻集成管理员的合并负担。 发版之后，要打 tag 。   develop #    从哪个分支分离开来：master 可以合并到哪个分支上：release   Develop（开发）分支，包含了项目最新的功能和代码，所有开发都在 develop 上进行。一般情况下小的修改直接在这个分支上提交代码。
+release #    从哪个分支分离开来：develop 必须要合并到哪个分支上：develop 与 master 分支的命名规范：release-*   Release （发行）分支，是为发行正式的生产版本做准备。当开发的差不多了，准备发行就可以创建一个发行分支，在这个分支上可以做一些小的 bug 修复，准备发行的元数据，比如版本号，发行日期之类的。这时候，develop 分支可以继续接收新的提交，为下一个发行做准备。
+feature #    从哪个分支分离开来：develop 必须要合并到哪个分支上：develop 分支的命名规范：除了 master，develop，release-，或者 hotfix- 以外的名字都可以   Feature（功能） 分支，有时候也叫 Topic 分支。在这种分支上去开发新的功能。当开发功能的时候，这个功能属于哪个目标发行还不知道。功能如果一直在开发，对应的这个功能分支就可以一直存在，不过到最后还是要合并到 develop 分支上，或者如果不想要开发的这个功能了，可以直接扔掉它。 Feature 分支一般只在开发者的 repo 里，而不是在 origin 上。"><meta name=theme-color content="#FFFFFF"><meta property="og:title" content><meta property="og:description" content="Git 分支的约束和管理 #  来源： dxyoo7
+一、分支说明 #  master #    主分支，用作生产分支，里面的代码是准备部署到生产环境的。master 永远处于稳定状态，这个分支代码可以随时用来部署。 master 不提交代码，只合并代码。 合并代码到 master 的操作，由项目对应的集成管理员专人负责。 各分支要定期将 master 代码合并进来，避免后续分支合并到 master 时容易产生冲突，以减轻集成管理员的合并负担。 发版之后，要打 tag 。   develop #    从哪个分支分离开来：master 可以合并到哪个分支上：release   Develop（开发）分支，包含了项目最新的功能和代码，所有开发都在 develop 上进行。一般情况下小的修改直接在这个分支上提交代码。
+release #    从哪个分支分离开来：develop 必须要合并到哪个分支上：develop 与 master 分支的命名规范：release-*   Release （发行）分支，是为发行正式的生产版本做准备。当开发的差不多了，准备发行就可以创建一个发行分支，在这个分支上可以做一些小的 bug 修复，准备发行的元数据，比如版本号，发行日期之类的。这时候，develop 分支可以继续接收新的提交，为下一个发行做准备。
+feature #    从哪个分支分离开来：develop 必须要合并到哪个分支上：develop 分支的命名规范：除了 master，develop，release-，或者 hotfix- 以外的名字都可以   Feature（功能） 分支，有时候也叫 Topic 分支。在这种分支上去开发新的功能。当开发功能的时候，这个功能属于哪个目标发行还不知道。功能如果一直在开发，对应的这个功能分支就可以一直存在，不过到最后还是要合并到 develop 分支上，或者如果不想要开发的这个功能了，可以直接扔掉它。 Feature 分支一般只在开发者的 repo 里，而不是在 origin 上。"><meta property="og:type" content="article"><meta property="og:url" content="https://airdb.dev/wiki/dev/github/git_branch_manage/"><meta property="article:section" content="wiki"><meta property="article:modified_time" content="2021-05-23T03:43:13+08:00"><title>Git Branch Manage | Hugo Book</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.7c4ea4a697f28ed01803f0419c167633441e2e8b6d5a92a4f9438fc373706b5f.css integrity="sha256-fE6kppfyjtAYA/BBnBZ2M0QeLottWpKk+UOPw3Nwa18="><script defer src=/en.search.min.9b046a63a75abce620c3d16f17bc53ecbb6b9e8b90200d3ee04337c5f0b7f9d1.js integrity="sha256-mwRqY6davOYgw9FvF7xT7LtrnouQIA0+4EM3xfC3+dE="></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk="></script><link rel=apple-touch-icon sizes=128x128 href=128x128.jpg><script>var _hmt=_hmt||[];(function(){var a=document.createElement("script"),b;a.src="https://hm.baidu.com/hm.js?65e05e8c0631a0d2802629f8ceb31fee",b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b),console.log("欢迎加入，https://airdb.dev"),console.log("Welcome，https://airdb.dev")})()</script><nav class="app-nav pc no-badge"><div class=logo><a href=//airdb.dev/ target=__blank class=dcloud-logo></a><a href=./ class="uniapp-logo active"></a></div><div class="search nav-search"><div class=input-wrap><input type=search id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class=clear-button><svg width="26" height="24"><circle cx="12" cy="12" r="11" fill="#ccc"/><path stroke="#fff" stroke-width="2" d="M8.25 8.25l7.5 7.5"/><path stroke="#fff" stroke-width="2" d="M8.25 15.75l7.5-7.5"/></svg></div></div><div class=results-panel></div></div><ul class=nav-url><li><a href=/wiki/osinit/>初始化</a></li><li><a href=/wiki/dev/github/>开发手册</a></li><li><a href=/wiki/kube/>云原生</a></li><li><a href=https://themes.gohugo.io/hugo-book/>APIs</a></li><li><a href=/wiki/dev/coding-style/>其他规范</a></li></ul><ul class=nav-href><li class=ext-link><a href=https://themes.gohugo.io/hugo-book/ target=__blank>插件市场</a></li><li class=ext-link><a href=https://github.com/airdb-wiki/hugo-book target=__blank>需求墙</a></li><li><a href=//github.com/sponsors/airdb target=__blank style=color:#f60!important><img src=https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-uni-app-doc/45e691f0-4f3d-11eb-b680-7980c8a877b8.png class=heart>赞助我们</a></li></ul><div class=github><a href=//github.com/airdb-wiki/hugo-book target=_blank><img src=https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-uni-app-doc/44f8d690-4f3d-11eb-b680-7980c8a877b8.svg></a></div></nav></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><ul><li><input type=checkbox id=section-3a62918a73cf3a56ce4d8636589462fc class=toggle checked>
+<label for=section-3a62918a73cf3a56ce4d8636589462fc class="flex justify-between"><a href=https://airdb.dev/wiki/dev/>Development Handbook</a></label><ul><li><input type=checkbox id=section-9f5b16b14bd5c881297ae5c5f97ee5ee class=toggle>
+<label for=section-9f5b16b14bd5c881297ae5c5f97ee5ee class="flex justify-between"><a href=https://airdb.dev/wiki/dev/coding-style/>Coding Style</a></label><ul><li><a href=https://airdb.dev/wiki/dev/coding-style/document/>Document</a></li><li><a href=https://airdb.dev/wiki/dev/coding-style/go-coding-style/>Go Coding Style</a></li></ul></li><li><input type=checkbox id=section-385d04790da9e055f0fb9886d58c945d class=toggle checked>
+<label for=section-385d04790da9e055f0fb9886d58c945d class="flex justify-between"><a href=https://airdb.dev/wiki/dev/github/>Git and Github</a></label><ul><li><a href=https://airdb.dev/wiki/dev/github/actions/>Actions</a></li><li><a href=https://airdb.dev/wiki/dev/github/fork/>Fork</a></li><li><a href=https://airdb.dev/wiki/dev/github/git_branch_manage/ class=active>Git Branch Manage</a></li><li><a href=https://airdb.dev/wiki/dev/github/how_to_github_pull_request/>How to Github Pull Request</a></li><li><a href=https://airdb.dev/wiki/dev/github/issue/>Issue</a></li><li><a href=https://airdb.dev/wiki/dev/github/makefile/>Makefile</a></li></ul></li><li><a href=https://airdb.dev/wiki/dev/emoji-list/>Emoji List</a></li></ul></li><li><input type=checkbox id=section-86bcd1fef1a2af774729755883c1d257 class=toggle>
+<label for=section-86bcd1fef1a2af774729755883c1d257 class="flex justify-between"><a href=https://airdb.dev/wiki/linux/>Linux</a></label><ul><li><input type=checkbox id=section-c0174c0c1240e2a5bb02cb5375f04b57 class=toggle>
+<label for=section-c0174c0c1240e2a5bb02cb5375f04b57 class="flex justify-between"><a>Service</a></label><ul><li><a href=https://airdb.dev/wiki/linux/service/dhcp/>DHCP</a></li><li><a href=https://airdb.dev/wiki/linux/service/monitor/>Monitor</a></li><li><a href=https://airdb.dev/wiki/linux/service/nginx/>Nginx</a></li></ul></li><li><input type=checkbox id=section-ec753e26065e60ec3e7698bf3aec4916 class=toggle>
+<label for=section-ec753e26065e60ec3e7698bf3aec4916 class="flex justify-between"><a>Shell</a></label><ul><li><a href=https://airdb.dev/wiki/linux/shell/bash-completion/>Bash Completion</a></li><li><a href=https://airdb.dev/wiki/linux/shell/bash-prog/>Bash Prog</a></li><li><a href=https://airdb.dev/wiki/linux/shell/bash/>Bash</a></li><li><a href=https://airdb.dev/wiki/linux/shell/ssh/>SSH</a></li><li><a href=https://airdb.dev/wiki/linux/shell/tools/>Tools</a></li><li><a href=https://airdb.dev/wiki/linux/shell/vim/>Vim</a></li></ul></li></ul></li><li><input type=checkbox id=section-e0cff803e5d463e167eabd49495041ea class=toggle>
+<label for=section-e0cff803e5d463e167eabd49495041ea class="flex justify-between"><a>Part1</a></label><ul><li><a href=https://airdb.dev/wiki/part1/4-ways-to-learn/>4 Ways to Learn</a></li><li><a href=https://airdb.dev/wiki/part1/efficient-communication/>Efficient Communication</a></li><li><a href=https://airdb.dev/wiki/part1/m1-ability/>M1 Ability</a></li><li><a href=https://airdb.dev/wiki/part1/README/>Readme</a></li></ul></li><li><input type=checkbox id=section-5dee0e9c4dd6c64706438ff1a2c08cf0 class=toggle>
+<label for=section-5dee0e9c4dd6c64706438ff1a2c08cf0 class="flex justify-between"><a>Part2</a></label><ul><li><a href=https://airdb.dev/wiki/part2/cicd/>Cicd</a></li><li><a href=https://airdb.dev/wiki/part2/gateway/>Gateway</a></li><li><a href=https://airdb.dev/wiki/part2/kube/>Kube</a></li><li><a href=https://airdb.dev/wiki/part2/linux/>Linux</a></li><li><a href=https://airdb.dev/wiki/part2/ops/>Ops</a></li><li><a href=https://airdb.dev/wiki/part2/osinit/>Osinit</a></li><li><a href=https://airdb.dev/wiki/part2/snapcraft/>Snapcraft</a></li><li><a href=https://airdb.dev/wiki/part2/sre/>Sre</a></li></ul></li><li><input type=checkbox id=section-d30d3ec74ebbcf69918117bd1b138f86 class=toggle>
+<label for=section-d30d3ec74ebbcf69918117bd1b138f86 class="flex justify-between"><a>Part3</a></label><ul><li><a href=https://airdb.dev/wiki/part3/README/>Readme</a></li></ul></li><li><input type=checkbox id=section-994e47d5b0fb0dcd373751ce0b14cd7a class=toggle>
+<label for=section-994e47d5b0fb0dcd373751ce0b14cd7a class="flex justify-between"><a>Part4</a></label><ul><li><a href=https://airdb.dev/wiki/part4/defensive-programming/>Defensive Programming</a></li><li><a href=https://airdb.dev/wiki/part4/exec_base64/>Exec Base64</a></li></ul></li><li><input type=checkbox id=section-540dd6c5f40a71c390a20670c6809927 class=toggle>
+<label for=section-540dd6c5f40a71c390a20670c6809927 class="flex justify-between"><a href=https://airdb.dev/wiki/kube/>Cloud Navtive</a></label><ul><li><a href=https://airdb.dev/wiki/kube/1-kubernetes-on-macOS/>1 Kubernetes on MAC Os</a></li><li><a href=https://airdb.dev/wiki/kube/2-ingress-exmaple/>2 Ingress Exmaple</a></li><li><a href=https://airdb.dev/wiki/kube/5-helm/>5 Helm</a></li><li><a href=https://airdb.dev/wiki/kube/9-faq/>9 Faq</a></li><li><a href=https://airdb.dev/wiki/kube/helm/>Helm</a></li></ul></li><li><input type=checkbox id=section-f33cff90d5fb7513acc1f8e32fdbbc68 class=toggle>
+<label for=section-f33cff90d5fb7513acc1f8e32fdbbc68 class="flex justify-between"><a href=https://airdb.dev/wiki/osinit/>OS Setup</a></label><ul><li><a href=https://airdb.dev/wiki/osinit/mac/>MAC</a></li><li><a href=https://airdb.dev/wiki/osinit/ubuntu/>Ubuntu</a></li><li><a href=https://airdb.dev/wiki/osinit/mac-faq/>MAC Faq</a></li><li><a href=https://airdb.dev/wiki/osinit/ubuntu-faq/>Ubuntu Faq</a></li></ul></li></ul></nav><script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>Git Branch Manage</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#git-分支的约束和管理>Git 分支的约束和管理</a><ul><li><a href=#一分支说明>一、分支说明</a><ul><li><a href=#master>master</a></li><li><a href=#develop>develop</a></li><li><a href=#release>release</a></li><li><a href=#feature>feature</a></li><li><a href=#hotfix>hotfix</a></li><li><a href=#bugfix>bugfix</a></li></ul></li><li><a href=#二分支开发>二、分支开发</a></li><li><a href=#三分支操作参考>三、分支操作参考</a><ul><li><a href=#master-1>master</a></li><li><a href=#develop-1>develop</a></li><li><a href=#release-1>release</a></li><li><a href=#feature-1>feature</a></li><li><a href=#hotfix-1>hotfix</a></li></ul></li></ul></li><li><a href=#从master切出hotfix分支>从master切出hotfix分支</a></li><li><a href=#master合并分支hotfix>master合并分支hotfix</a></li><li><a href=#develop合并分支hotfix>develop合并分支hotfix</a><ul><li><ul><li><a href=#bugfix-1>bugfix</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=git-分支的约束和管理>Git 分支的约束和管理
+<a class=anchor href=#git-%e5%88%86%e6%94%af%e7%9a%84%e7%ba%a6%e6%9d%9f%e5%92%8c%e7%ae%a1%e7%90%86>#</a></h1><p>来源：
+<a href=https://dxyoo7.github.io/2016/09/22/git-branch-manage/>dxyoo7</a></p><h2 id=一分支说明>一、分支说明
+<a class=anchor href=#%e4%b8%80%e5%88%86%e6%94%af%e8%af%b4%e6%98%8e>#</a></h2><h3 id=master>master
+<a class=anchor href=#master>#</a></h3><blockquote><ul><li>主分支，用作生产分支，里面的代码是准备部署到生产环境的。master 永远处于稳定状态，这个分支代码可以随时用来部署。</li><li>master 不提交代码，只合并代码。</li><li>合并代码到 master 的操作，由项目对应的集成管理员专人负责。</li><li>各分支要定期将 master 代码合并进来，避免后续分支合并到 master 时容易产生冲突，以减轻集成管理员的合并负担。</li><li>发版之后，要打 tag 。</li></ul></blockquote><h3 id=develop>develop
+<a class=anchor href=#develop>#</a></h3><blockquote><ul><li>从哪个分支分离开来：master</li><li>可以合并到哪个分支上：release</li></ul></blockquote><p>Develop（开发）分支，包含了项目最新的功能和代码，所有开发都在 develop 上进行。一般情况下小的修改直接在这个分支上提交代码。</p><h3 id=release>release
+<a class=anchor href=#release>#</a></h3><blockquote><ul><li>从哪个分支分离开来：develop</li><li>必须要合并到哪个分支上：develop 与 master</li><li>分支的命名规范：release-*</li></ul></blockquote><p>Release （发行）分支，是为发行正式的生产版本做准备。当开发的差不多了，准备发行就可以创建一个发行分支，在这个分支上可以做一些小的 bug 修复，准备发行的元数据，比如版本号，发行日期之类的。这时候，develop 分支可以继续接收新的提交，为下一个发行做准备。</p><h3 id=feature>feature
+<a class=anchor href=#feature>#</a></h3><blockquote><ul><li>从哪个分支分离开来：develop</li><li>必须要合并到哪个分支上：develop</li><li>分支的命名规范：除了 master，develop，release-，或者 hotfix- 以外的名字都可以</li></ul></blockquote><p>Feature（功能） 分支，有时候也叫 Topic 分支。在这种分支上去开发新的功能。当开发功能的时候，这个功能属于哪个目标发行还不知道。功能如果一直在开发，对应的这个功能分支就可以一直存在，不过到最后还是要合并到 develop 分支上，或者如果不想要开发的这个功能了，可以直接扔掉它。
+Feature 分支一般只在开发者的 repo 里，而不是在 origin 上。</p><h3 id=hotfix>hotfix
+<a class=anchor href=#hotfix>#</a></h3><blockquote><ul><li>从哪个分支分离开来：master</li><li>必须要合并到哪个分支上：develop 与 master</li><li>分支的命名规范：hotfix-*</li></ul></blockquote><p>当在生产版本上遇到 bug，你需要立即修复的时候，可以创建一个 Hotfix 分支，这个分支可以基于生产环境使用的对应的在 master 分支上的 tag 来创建。</p><h3 id=bugfix>bugfix
+<a class=anchor href=#bugfix>#</a></h3><blockquote><ul><li>从哪个分支分离开来：master</li><li>必须要合并到哪个分支上：develop 与 master</li><li>分支的命名规范：hotfix-*</li></ul></blockquote><p>等同于hotfix，只是紧急性没有hotfix那么急迫。</p><p>如下图所示：
+<img src=../images/git_branch.png alt=branch></p><h2 id=二分支开发>二、分支开发
+<a class=anchor href=#%e4%ba%8c%e5%88%86%e6%94%af%e5%bc%80%e5%8f%91>#</a></h2><p>新版本开始：每个人从最新develop上checkout一个本地分支做开发；
+本阶段：禁止直接在develop上开发； 如预期需要协助，可以几个人协同一个远端分支开发；一般会在远端创建version-develop分支</p><blockquote><ul><li>开发周期：一个版本的迭代周期，我们分成3个里程碑(v1, v2, v3);</li><li>v1版本：开发完成，会merge各自分支到develop；此时develop才进入下一个开发周期； 同时发布v1包给测试； v1的Bug，大家可以选择在develop上直接修改，或者继续在各自的本地分支上修改；</li><li>v2、v3版本：建议还是在各自的本地分支上继续开发； 完成feature后，同样merge回develop；</li></ul></blockquote><h2 id=三分支操作参考>三、分支操作参考
+<a class=anchor href=#%e4%b8%89%e5%88%86%e6%94%af%e6%93%8d%e4%bd%9c%e5%8f%82%e8%80%83>#</a></h2><h3 id=master-1>master
+<a class=anchor href=#master-1>#</a></h3><pre><code># 合并release分支
+git checkout master
+git pull origin master --rebase
+git merge  --no-ff  release
+git tag V1.0
+git push origin master
+
+
+# 或者合并hotfix分支
+git checkout master
+git pull origin master --rebase
+git merge  --no-ff  release
+git tag V1.1
+git push origin master
+</code></pre><h3 id=develop-1>develop
+<a class=anchor href=#develop-1>#</a></h3><pre><code># 创建develop分支(第一次)
+git checkout master
+git pull origin master --rebase
+git checkout -b develop
+git push origin develop
+
+
+# 合并一般的feature分支（推送到远程的feature分支）
+git checkout develop
+git pull origin develop --rebase
+git merge  --no-ff  feature
+git push origin develop
+
+
+# 合并较小的feature分支（不推送到远程的feature分支）
+# 1)获取最新develpo分支内容
+git checkout develop
+git pull origin develop --rebase
+# 2）回合develop
+git checkout feature
+git rebase develop
+# 3）merge feature
+git merge  --no-ff  feature
+git push origin develop
+</code></pre><h3 id=release-1>release
+<a class=anchor href=#release-1>#</a></h3><pre><code># 从develop切出realse分支
+git checkout -b release
+
+# 合并develop分支
+git pull origin release --rebase
+git merge  --no-ff  develop
+git push origin develop
+</code></pre><h3 id=feature-1>feature
+<a class=anchor href=#feature-1>#</a></h3><pre><code># 从develop切出feature分支
+1) #拉取最新develop分支代码
+git checkout develop
+git pull origin develop  --rebase
+2）#切出新的feature分支
+git checkout -b feature
+3) #合并到develop(merge)
+git checkout develop
+git pull origin develop  --rebase
+git merge --no-ff feature
+git push origin develop
+
+3) #合并到develop(rebase)
+git checkout develop
+git pull origin develop  --rebase
+git checkout feature
+git rebase develop
+# 如果有冲突，修改好后，执行以下（千万不要执行git commit XX）
+|| git add .
+|| git rebase --continue
+git checkout develop
+git merge --no-ff feature
+git push origin develop
+</code></pre><h3 id=hotfix-1>hotfix
+<a class=anchor href=#hotfix-1>#</a></h3><h1 id=从master切出hotfix分支>从master切出hotfix分支
+<a class=anchor href=#%e4%bb%8emaster%e5%88%87%e5%87%bahotfix%e5%88%86%e6%94%af>#</a></h1><p>git checkout master
+git pull origin master &ndash;rebase
+git checkout -b hotfix</p><h1 id=master合并分支hotfix>master合并分支hotfix
+<a class=anchor href=#master%e5%90%88%e5%b9%b6%e5%88%86%e6%94%afhotfix>#</a></h1><p>git checkout master
+git pull origin master &ndash;rebase
+git merge &ndash;no-ff hotfix
+git tag V1.1
+git push origin master</p><h1 id=develop合并分支hotfix>develop合并分支hotfix
+<a class=anchor href=#develop%e5%90%88%e5%b9%b6%e5%88%86%e6%94%afhotfix>#</a></h1><p>git checkout develop
+git pull origin develop &ndash;rebase
+git merge &ndash;no-ff hotfix
+git push origin develop</p><h3 id=bugfix-1>bugfix
+<a class=anchor href=#bugfix-1>#</a></h3><p>同hotfix，但不一定是从master分支切出.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/airdb-wiki/hugo-book/commit/0ef04d8f604bdf30561a12eb215e207c2752db99 title="Last modified by deancn | Sat May 22 19:43:13 UTC 2021" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>Sat May 22 19:43:13 UTC 2021</span></a></div><div><a class="flex align-center" href=https://github.com/airdb-wiki/hugo-book/edit/main/exampleSite/content/wiki/dev/github/git_branch_manage.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#git-分支的约束和管理>Git 分支的约束和管理</a><ul><li><a href=#一分支说明>一、分支说明</a><ul><li><a href=#master>master</a></li><li><a href=#develop>develop</a></li><li><a href=#release>release</a></li><li><a href=#feature>feature</a></li><li><a href=#hotfix>hotfix</a></li><li><a href=#bugfix>bugfix</a></li></ul></li><li><a href=#二分支开发>二、分支开发</a></li><li><a href=#三分支操作参考>三、分支操作参考</a><ul><li><a href=#master-1>master</a></li><li><a href=#develop-1>develop</a></li><li><a href=#release-1>release</a></li><li><a href=#feature-1>feature</a></li><li><a href=#hotfix-1>hotfix</a></li></ul></li></ul></li><li><a href=#从master切出hotfix分支>从master切出hotfix分支</a></li><li><a href=#master合并分支hotfix>master合并分支hotfix</a></li><li><a href=#develop合并分支hotfix>develop合并分支hotfix</a><ul><li><ul><li><a href=#bugfix-1>bugfix</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

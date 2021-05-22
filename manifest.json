@@ -1,6 +1,6 @@
 {
-  "name": "airdb",
-  "short_name": "airdb",
+  "name": "Hugo Book",
+  "short_name": "Hugo Book",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

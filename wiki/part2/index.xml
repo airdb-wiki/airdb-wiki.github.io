@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo Book</title><link>https://airdb.dev/wiki/part2/</link><description>Recent content on Hugo Book</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://airdb.dev/wiki/part2/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://airdb.dev/wiki/part2/cicd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/cicd/</guid><description>Code Wiki # Code Part # dev</description></item><item><title/><link>https://airdb.dev/wiki/part2/gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/gateway/</guid><description>Gateway # 《深入理解BFE》
+智能网关趋势 # HTTPS
+Quic
+GTC (Global Traffic Control 全局流量控制） # 工作原理 分布式监控 调度计算 下发执行
+场景 网络出口故障 网络出口拥塞，被攻击 网络接入系统故障 区域性联通故障
+GSLB (Global Server Load Balancing 全局服务器负载平衡) # 目的 降低对DNS 调度的依赖 加快止损速度
+场景 内部服务故障 服务发布 内部服务压力不均 业务突增</description></item><item><title/><link>https://airdb.dev/wiki/part2/kube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/kube/</guid><description>Code Wiki # Code Part # dev</description></item><item><title/><link>https://airdb.dev/wiki/part2/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/linux/</guid><description>Linux Wiki # Basic # Linux</description></item><item><title/><link>https://airdb.dev/wiki/part2/ops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/ops/</guid><description>运维 # 接入 # 四层接入
+七层接入
+CDN
+IP 库
+Nginx
+服务集群 # 发布
+容器
+调度
+容灾
+数据一致性
+容灾
+多活
+预案演练
+CI/CD # 持续集成
+持续部署
+数据库 # 同步
+数据恢复
+缓存 # 中间件 # Kafka
+消息中间件 MQ
+数据安全及运维安全 # WAF
+大数据及分布式计算 # Hadoop
+Ceph
+Hive
+人工智能 # 语音识别 ASR
+人脸识别
+自然语言处理 NLP</description></item><item><title/><link>https://airdb.dev/wiki/part2/osinit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/osinit/</guid><description>OS Init # 主机容器初始化 # [osinit]https://init.airdb.host/
+osinit Repo
+软件包管理 # Ubunut PPA (https://launchpad.net/~airdb)
+sudo apt-add-repository ppa:airdb/adb</description></item><item><title/><link>https://airdb.dev/wiki/part2/snapcraft/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/snapcraft/</guid><description>Ubuntu Snapcraft # snapcraft push --release edge *.snap Pushing airdb_1.0_amd64.snap After pushing, an attempt will be made to release to 'edge' Preparing to push '/home/ubuntu/airdb/airdb_1.0_amd64.snap' to the store. Pushing airdb_1.0_amd64.snap [===================================================================================================================] 100% Processing...| Ready to release! Revision 1 of 'airdb' created. Track Arch Channel Version Revision latest amd64 stable - - candidate - - beta - - edge 1.0 1 The 'edge' channel is now open. snap/snapcraft.yaml name: airdb version: '1.</description></item><item><title/><link>https://airdb.dev/wiki/part2/sre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/part2/sre/</guid><description>SRE 介绍 # Site Reliability Engineering
+一、SRE起源和发展 # IT领域一直有很多趋势和流行关键词，比如微服务和DevOps，现在国内又兴起了SRE，它在传统运维之外又纳入更多的开发和流程部分。SRE是Site Reliability Engineer的简称，由谷歌公司首先提出，一开始是公司内部定义的一个工种。谷歌的SRE工程师对Borg分布式集群管理系统以及在此之上运行的Gmail、Google Docs、Web Search等以及各种APP应用进行运维。
+这个岗位的工程师具有开发能力，又了解一些系统管理的知识，他们把一些最佳实践、方式、流程、方法都固化成代码，用这种方式去应对规模性的扩张，去应对复杂度的上升。从名字其实就可以看出SRE不只是做Operation方面的工作，更多是保障整个服务的稳定性。
+SRE不仅仅是对分布式系统运维工程师的职业要求，还涉及运维的自动化、开发运维一体化、持续集成持续开发等理念、监控系统、部署、容量规划、可靠性技术和实践和运维团队建设等方面的内容。可为云服务提供商提高分布式系统的资源利用率，降低运营和运维成本，让系统可靠和稳定地运行，提升用户体验。
+随着互联网的快速发展，分布式系统规模急剧扩展，新型系统的运维要求对传统运维理念提出了新的挑战。随着谷歌对大规模分布式集群和互联网应用运维经验的积累，SRE的实践理念得到国外各大互联网公司的采纳和应用。Site Reliability Engineer逐渐朝着Site Reliability Engineering的理论化方向发展。
+由于互联网行业的特性和对速度的追求，一般这些新理念和新技术的发端和普及都是从互联网企业开始，国内也不例外。虽然很多国内互联网企业并没有明确提及SRE这个岗位名称，但是据我所知他们也是在向着SRE理念提及的很多方向在前进，比如自动化、工具化、平台化等等。不管国内称之为PE、运维工程师还是其他什么，其实做的事情也就是SRE在倡导的DevOps的运维实践
+二、定位、方向与职责 # 总结一下，SRE
+从岗位的角度上看：运维工程师升级版 从运维的方式上看：自动化、智能化、工具化、平台化 从工作的结果上看：保证系统稳定的前提下提高系统效率，平衡系统稳定性和用户体验的关系
+三、实践 # 从SRE成功实践的几大要素看：
+1、具有研发能力 2、一定要设定服务的SLA 3、有余量的预估 4、 SRE与研发有共享的资源工具 5、 SRE承担不超过50%的运维工作量 6、 每个事故都要做事后分析，并要聚焦于流程和技术。</description></item></channel></rss>

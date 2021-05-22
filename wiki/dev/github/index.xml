@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git and Github on Hugo Book</title><link>https://airdb.dev/wiki/dev/github/</link><description>Recent content in Git and Github on Hugo Book</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://airdb.dev/wiki/dev/github/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://airdb.dev/wiki/dev/github/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/github/actions/</guid><description>Github Actions # Github Actions 是一套基于 github 的自动化执行框架，可以自定义各种 workflow 及工具来满足 CI, CD 相关的各种需求。
+创建一个容器的 action # Github Demo: airdb actions
+Refer: https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action
+主体思路：
+通过执行 docker run 命令实现 actions 操作。
+Workflow:
+action.yml 中配置, 启用自定义的 action , 增加 input 变量作为 docker run 参数 调用自定义的 action , 从 env 中获取 GITHUB_EVENT_PATH, 读取 event.json 全部内容 代码中进行自定义操作 设置输出, 如 echo &amp;ldquo;::set-output name=time::$time&amp;rdquo;</description></item><item><title/><link>https://airdb.dev/wiki/dev/github/fork/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/github/fork/</guid><description>Github 技巧 # Gitlab 或 Github Fork 后如何同步源的新更新内容？ # 给 fork 配置远程库 # 查看远程状态 git remote -v
+确定一个将被同步给 fork 远程的上游仓库 git remote add upstream https://github.com/bfenetworks/bfe
+再次查看状态确认是否配置成功。 git remote -v
+同步 fork # 从上游仓库 fetch 分支和提交点，提交给本地 master，并会被存储在一个本地分支 upstream/master git fetch upstream 切换到本地主分支(如果不在的话) git checkout develop
+把 upstream/master 分支合并到本地 master 上，这样就完成了同步，并且不会丢掉本地修改的内容。 git merge upstream/develop</description></item><item><title/><link>https://airdb.dev/wiki/dev/github/git_branch_manage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/github/git_branch_manage/</guid><description>Git 分支的约束和管理 # 来源： dxyoo7
+一、分支说明 # master # 主分支，用作生产分支，里面的代码是准备部署到生产环境的。master 永远处于稳定状态，这个分支代码可以随时用来部署。 master 不提交代码，只合并代码。 合并代码到 master 的操作，由项目对应的集成管理员专人负责。 各分支要定期将 master 代码合并进来，避免后续分支合并到 master 时容易产生冲突，以减轻集成管理员的合并负担。 发版之后，要打 tag 。 develop # 从哪个分支分离开来：master 可以合并到哪个分支上：release Develop（开发）分支，包含了项目最新的功能和代码，所有开发都在 develop 上进行。一般情况下小的修改直接在这个分支上提交代码。
+release # 从哪个分支分离开来：develop 必须要合并到哪个分支上：develop 与 master 分支的命名规范：release-* Release （发行）分支，是为发行正式的生产版本做准备。当开发的差不多了，准备发行就可以创建一个发行分支，在这个分支上可以做一些小的 bug 修复，准备发行的元数据，比如版本号，发行日期之类的。这时候，develop 分支可以继续接收新的提交，为下一个发行做准备。
+feature # 从哪个分支分离开来：develop 必须要合并到哪个分支上：develop 分支的命名规范：除了 master，develop，release-，或者 hotfix- 以外的名字都可以 Feature（功能） 分支，有时候也叫 Topic 分支。在这种分支上去开发新的功能。当开发功能的时候，这个功能属于哪个目标发行还不知道。功能如果一直在开发，对应的这个功能分支就可以一直存在，不过到最后还是要合并到 develop 分支上，或者如果不想要开发的这个功能了，可以直接扔掉它。 Feature 分支一般只在开发者的 repo 里，而不是在 origin 上。</description></item><item><title/><link>https://airdb.dev/wiki/dev/github/how_to_github_pull_request/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/github/how_to_github_pull_request/</guid><description>如何参与贡献: # Github 提交 PR, 地址: github.com/airdb/fun Github 提交 issues, 地址: github.com/airdb/fun/issues 写邮件给 info@airdb.com Github 如何提交 PR # step 1:
+Fork GitHub 上的 Repository 到贡献者的 Repository
+step 2:
+clone 代码到本地 git clone github.com/airdb/fun
+step 3:
+检查当前 Git Repository
+git remote -v origin https://github.com/airdb/fun (fetch) origin https://github.com/airdb/fun (push) step 4:
+新建立贡献者 Git Repository 的连接
+git remote add pullrequest https://github.</description></item><item><title/><link>https://airdb.dev/wiki/dev/github/issue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/github/issue/</guid><description>Github Issue 的用法 # Reference
+Issues 的属性 # GitHub 中每一个仓库都会有对应的一个issues的功能，issues 中可以新建多个 issue，每一个 issue 就像一篇文章，有标题和内容，还有评论。另外，每个issue都有唯一的编号 #n。 issue 可以设置: Opened 和 Closed 两种状态。
+issue 还可以有额外的属性：
+`Labels`，标签。包括 `bug`、`invalid` 等，可以自定义。表示 issue 的类型，解决的方式。 `Milestone`，里程碑。通常用来做版本管理，v0.1、v1.0 之类的，也可以是任意自定义字符串。一个里程碑对应的所有 issue 都被关闭后，这个里程碑会被自动认为已经达成。 `Assignee`，责任人。指定这个 issue 由谁负责来解决。 个人如何利用issues的功能？ # GitHub 的 issue 功能，对个人而言，就如同 TODO list。
+可以把所有想要在下一步完成的工作，如feature 添加、bug 修复等，都写成一个个的 issue ，放在上面。既可以作为提醒，也可以统一管理。 另外，每一次 commit 都可以选择性的与某个 issue 关联。比如在 message 中添加 #n，就可以与第 n 个 issue 进行关联。 commit message title, #1 这个提交会作为一个 comment ，出现在编号为1的 issue 记录中。 如果添加：</description></item><item><title/><link>https://airdb.dev/wiki/dev/github/makefile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/github/makefile/</guid><description>Makefile # Command line arguments # myos = $(word 1, $@) ifndef $myos myos = &amp;#34;$(shell uname | tr A-Z a-z)&amp;#34; endif Examples # Go Makefile # -include .env VERSION := $(shell git describe --tags) BUILD := $(shell git rev-parse --short HEAD) PROJECTNAME := $(shell basename &amp;#34;$(PWD)&amp;#34;) # Go related variables. GOBASE := $(shell pwd) GOPATH := $(GOBASE)/vendor:$(GOBASE) GOBIN := $(GOBASE)/bin GOFILES := $(wildcard *.go) # Use linker flags to provide version/build settings LDFLAGS=-ldflags &amp;#34;-X=main.</description></item></channel></rss>
