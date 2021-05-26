@@ -2,8 +2,9 @@
 yes, the way used by strings.Builder, is a more efficient way.
 func ByteSlice2String(bs []byte) string { return *(*string)(unsafe.Pointer(&amp;amp;bs)) } For reference, this is the source referred to
 https://www.openmymind.net/Go-Slices-And-The-Case-Of-The-Missing-Memory/</description></item><item><title/><link>https://airdb.dev/wiki/dev/go/serverless-tencent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/go/serverless-tencent/</guid><description>腾讯云 Serverless # 讨论区： https://github.com/serverless/serverless-tencent/discussions
-安装 # npm install -g serverless 环境配置 # serverless 配置文件 .env # tencent serverless config STAGE=test SERVERLESS_PLATFORM_VENDOR=tencent GLOBAL_ACCELERATOR_NA=true TENCENT_APP_ID=xxx TENCENT_SECRET_ID=XXX TENCENT_SECRET_KEY=XXX TENCENT_REGION=ap-shanghai serverless.yaml 配置文件 Ref: https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md.
+安装 # npm install -g serverless 环境配置 # serverless 配置文件 .env # tencent serverless config STAGE=test SERVERLESS_PLATFORM_VENDOR=tencent GLOBAL_ACCELERATOR_NA=true TENCENT_APP_ID=xxx TENCENT_SECRET_ID=XXX TENCENT_SECRET_KEY=XXX TENCENT_REGION=ap-shanghai 不过.env 文件管理繁琐， 建议使用 credential 来存储全局 secret, 全局授权身份
+# 国际用户，使用如下命令部署 SERVERLESS_PLATFORM_VENDOR=tencent GLOBAL_ACCELERATOR_NA=true sls deploy --stage test serverless.yaml 配置文件 Ref: https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md.
 Demo: [https://github.com/airdb/scf-go]
-部署 # sls deploy --stage test 查看日志 # sls logs --tail --stage test</description></item><item><title/><link>https://airdb.dev/wiki/dev/go/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/go/tools/</guid><description>Golang Command Line tools # Linux pipes in Golang
+部署 # SERVERLESS_PLATFORM_VENDOR=tencent GLOBAL_ACCELERATOR_NA=true sls deploy --stage test 查看日志 # SERVERLESS_PLATFORM_VENDOR=tencent GLOBAL_ACCELERATOR_NA=true sls logs --tail --stage test</description></item><item><title/><link>https://airdb.dev/wiki/dev/go/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://airdb.dev/wiki/dev/go/tools/</guid><description>Golang Command Line tools # Linux pipes in Golang
 使用Go语言在MacOS创建一个自定义的命令行工具
 你应该定期更新 Homebrew</description></item></channel></rss>
