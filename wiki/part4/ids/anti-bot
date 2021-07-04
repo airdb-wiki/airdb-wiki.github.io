@@ -1,0 +1,14 @@
+---
+title: HTTPS - TSL 指纹
+---
+
+## Values for TLS Versions
+
+| TLS Version	| Value |
+| --- | --- |
+| 1.0 | 769 |
+| 1.1 | 770 |
+| 1.2 | 771 |
+| 1.3 | 772 |
+
+https://docs.microsoft.com/en-us/dotnet/api/system.security.authentication.sslprotocols?view=net-5.0
