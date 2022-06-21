@@ -14,15 +14,15 @@ actions:
     link: /
 
 features:
-  - title: Markdown Enhance
-    icon: markdown
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in markdown
-    link: https://vuepress-theme-hope.github.io/v2/guide/markdown/
-
-  - title: Slide page
+  - title: Redoc
     icon: slides
-    details: Adding slide pages to display things you like
-    link: https://vuepress-theme-hope.github.io/v2/guide/layout/slides
+    details: A tool for APIs swagger documentation.
+    link: https://airdb.wiki/redoc/
+
+  - title: DeanCN
+    icon: slides
+    details: DeanCN's Personal Technical Documentation.
+    link: https://airdb.wiki/deancn/
 
   - title: Layout enhancement
     icon: layout

@@ -6,15 +6,15 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "airdb.team",
+    url: "https://airdb.wiki",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "airdb-wiki/airdb-wiki.github.io",
 
   docsDir: "demo/src",
 

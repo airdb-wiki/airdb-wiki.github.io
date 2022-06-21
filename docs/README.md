@@ -5,7 +5,7 @@ icon: home
 title: Blog Home
 heroImage: /logo.svg
 heroText: the name of your blog
-tagline: You can put your slogan here
+tagline: Better Tech Better Life.
 heroFullScreen: true
 projects:
   - icon: project
@@ -38,7 +38,7 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: customize your footer text
+footer: MIT Licensed | Copyright © 2015-present airdb.
 ---
 
 This is a blog home page demo.
