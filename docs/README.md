@@ -27,7 +27,7 @@ features:
   - title: Airdb Academy
     icon: layout
     details: Happy learn here.
-    link: https://github.com/airdb-wiki/academy
+    link: https://airdb.wiki/academy
 
   - title: Hugo Book
     icon: comment
@@ -63,6 +63,11 @@ features:
     icon: contrast
     details: Airdb Team Platform.
     link: https://airdb.team
+
+    - title: airdb.net
+    icon: contrast
+    details: https://airdb.net/
+    link: https://airdb.net/
 
   - title: Technical Support
     icon: more
