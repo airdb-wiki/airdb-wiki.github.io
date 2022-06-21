@@ -1,47 +1,80 @@
 ---
-layout: Blog
+home: true
 icon: home
-title: Blog Home
+title: Project home
 heroImage: /logo.svg
-heroText: the name of your blog
-tagline: Better Tech Better Life.
-heroFullScreen: true
-projects:
-  - icon: project
-    name: project name
-    desc: project detailed description
-    link: https://your.project.link
+heroText: Project name
+tagline: You can place the description of the project here.
+actions:
+  - text: How to Use 💡
+    link: /guide/
+    type: primary
 
-  - icon: link
-    name: link name
-    desc: link detailed description
-    link: https://link.address
+  - text: Blog homepage 🏠
+    link: /
 
-  - icon: book
-    name: book name
-    desc: Detailed description of the book
-    link: https://link.to.your.book
+features:
+  - title: Redoc
+    icon: slides
+    details: A tool for APIs swagger documentation.
+    link: https://airdb.wiki/redoc/
 
-  - icon: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
+  - title: DeanCN
+    icon: slides
+    details: DeanCN's Personal Technical Documentation.
+    link: https://airdb.wiki/deancn/
 
-  - icon: friend
-    name: friend name
-    desc: Detailed description of friend
-    link: https://link.to.your.friend
+  - title: Airdb Academy
+    icon: layout
+    details: Happy learn here.
+    link: https://github.com/airdb-wiki/academy
 
-  - icon: /logo.svg
-    name: custom item
-    desc: Detailed description of this custom item
-    link: https://link.to.your.friend
+  - title: Hugo Book
+    icon: comment
+    details: A theme for the Hugo.
+    link: https://github.com/airdb-wiki/hugo-book
 
-footer: MIT Licensed | Copyright © 2015-present airdb.
+  - title: Study Golang
+    icon: info
+    details: Help for the studygolang.com website.
+    link: https://github.com/airdb-wiki/studygolang
+
+  - title: Interview
+    icon: blog
+    details: Interview skills.
+    link: https://airdb.wiki/interview/
+
+  - title: AI
+    icon: palette
+    details: Learn AI
+    link: https://airdb.wiki/ai/
+
+  - title: Vue
+    icon: support
+    details: Learn VUE
+    link: https://airdb.wiki/ai/
+
+  - title: English
+    icon: contrast
+    details: Learn English
+    link: https://airdb.wiki/en/
+
+  - title: Airdb Team
+    icon: contrast
+    details: Airdb Team Platform.
+    link: https://airdb.team
+
+  - title: Technical Support
+    icon: more
+    details: Contact us for support via Wechat.
+    link: https://work.weixin.qq.com/kfid/kfc02343d9ba414880a
+
+copyright: false
+footer: MIT Licensed | Copyright © 2015-present airdb.team
 ---
 
-This is a blog home page demo.
+This is an example of a project homepage. You can place your main content here.
 
-To use this layout, you should set both `layout: Blog` and `home: true` in the page front matter.
+To use this layout, you need to set `home: true` in the page front matter.
 
-For related configuration docs, please see [blog homepage](https://vuepress-theme-hope.github.io/v2/guide/blog/home/).
+For related descriptions of configuration items, please see [Project HomePage Layout Config](https://vuepress-theme-hope.github.io/v2/guide/layout/home/).

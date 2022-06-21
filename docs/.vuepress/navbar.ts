@@ -45,8 +45,8 @@ export default navbar([
     ],
   },
   {
-    text: "Theme Docs",
-    icon: "note",
-    link: "https://vuepress-theme-hope.github.io/v2/",
+    text: "Sponsors",
+    icon: "like",
+    link: "https://github.com/sponsors/airdb",
   },
 ]);
