@@ -14,6 +14,11 @@ actions:
     link: /
 
 features:
+  - title: Team Management
+    icon: read
+    details: Airdb Team Management
+    link: https://airdb.wiki/mgmt/
+
   - title: Redoc
     icon: slides
     details: A tool for APIs swagger documentation.
