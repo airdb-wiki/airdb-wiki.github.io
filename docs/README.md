@@ -69,7 +69,7 @@ features:
     details: Airdb Team Platform.
     link: https://airdb.team
 
-    - title: airdb.net
+  - title: airdb.net
     icon: contrast
     details: https://airdb.net/
     link: https://airdb.net/
