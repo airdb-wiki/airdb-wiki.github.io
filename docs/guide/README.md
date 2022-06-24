@@ -8,6 +8,10 @@ category:
 
 ## Catalog
 
+- [How to join us?](join.md)
+
+- [Team Management](mgmt.md)
+- 
 - [Markdown Enhance](markdown.md)
 
 - [Page Config](page.md)

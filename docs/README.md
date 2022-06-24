@@ -4,7 +4,7 @@ icon: home
 title: Project home
 heroImage: /logo.svg
 heroText: Project name
-tagline: You can place the description of the project here.
+tagline: Together, coding with Love
 actions:
   - text: Guide 💡
     link: /guide/
@@ -87,9 +87,3 @@ features:
 copyright: false
 footer: MIT Licensed | Copyright © 2015-present airdb.team
 ---
-
-This is an example of a project homepage. You can place your main content here.
-
-To use this layout, you need to set `home: true` in the page front matter.
-
-For related descriptions of configuration items, please see [Project HomePage Layout Config](https://vuepress-theme-hope.github.io/v2/guide/layout/home/).
