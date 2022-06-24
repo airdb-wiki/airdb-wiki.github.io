@@ -24,6 +24,12 @@ features:
     details: A tool for APIs swagger documentation.
     link: https://airdb.wiki/redoc/
 
+  - title: Gateway
+    icon: slides
+    details: Gateway, DNS, WAF, Nginx
+    link: https://airdb.wiki/gateway/
+
+  - title: DeanCN
   - title: DeanCN
     icon: slides
     details: DeanCN's Personal Technical Documentation.
