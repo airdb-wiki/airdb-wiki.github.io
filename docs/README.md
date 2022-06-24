@@ -6,12 +6,12 @@ heroImage: /logo.svg
 heroText: Project name
 tagline: You can place the description of the project here.
 actions:
-  - text: How to Use 💡
+  - text: Guide 💡
     link: /guide/
     type: primary
 
-  - text: Blog homepage 🏠
-    link: /
+  - text: Github homepage 🏠
+    link: https://github.com/airdb/
 
 features:
   - title: Team Management
