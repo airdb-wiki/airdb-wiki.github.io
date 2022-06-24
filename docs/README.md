@@ -30,7 +30,6 @@ features:
     link: https://airdb.wiki/gateway/
 
   - title: DeanCN
-  - title: DeanCN
     icon: slides
     details: DeanCN's Personal Technical Documentation.
     link: https://airdb.wiki/deancn/
