@@ -24,14 +24,14 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: "Default footer",
+  footer: "MIT Licensed | Copyright © 2015-present airdb.team",
 
   displayFooter: true,
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
-    description: "A FrontEnd programmer",
+    description: "Coding with love",
     intro: "/intro.html",
     medias: {
       Baidu: "https://example.com",
