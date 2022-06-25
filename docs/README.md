@@ -69,6 +69,11 @@ features:
     details: Learn English
     link: https://airdb.wiki/en/
 
+  - title: Airdb SSO
+    icon: contrast
+    details: Airdb SSO
+    link: https://sso.airdb.net
+
   - title: Airdb Team
     icon: contrast
     details: Airdb Team Platform.
