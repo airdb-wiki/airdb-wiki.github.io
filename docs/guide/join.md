@@ -1,5 +1,5 @@
 ---
-title: Markdown Enhance
+title: Join us
 icon: markdown
 order: 2
 category:
