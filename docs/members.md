@@ -1,10 +1,10 @@
 ---
 home: true
 icon: home
-title: Member Home
+title: Team Members
 heroImage: /logo.svg
 heroText: Team Members
-tagline: Together, coding with Love
+tagline: Different regions and ages, but same passion.
 actions:
   - text: Join us 🏠
     link: /guide/
@@ -15,16 +15,16 @@ actions:
 
 features:
   - title: DeanCN
-    icon: read
+    icon: profile
     details: Make something different.
     link: https://airdb.wiki/DeanCN/
 
   - title: xqbumu
-    icon: read
+    icon: profile
     details: I'm a backend developer and interested in development, technology, cartoon.
     link: https://xqbumu.gitlab.io
 
   - title: xi4oyi
-    icon: read
+    icon: profile
     details: Welfare team, no more introduction.
     link: https://airdb.wiki/
