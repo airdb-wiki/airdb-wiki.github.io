@@ -42,7 +42,7 @@ features:
   - title: DevOps
     icon: slides
     details: CI, CD, Monitoring, etc...
-    link: https://airdb.wiki/linux/
+    link: https://airdb.wiki/devops/
 
   - title: Airdb Academy
     icon: layout
