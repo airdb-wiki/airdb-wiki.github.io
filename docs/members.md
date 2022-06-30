@@ -17,7 +17,7 @@ features:
   - title: DeanCN
     icon: profile
     details: Make something different.
-    link: https://airdb.wiki/DeanCN/
+    link: https://airdb.wiki/deancn/
 
   - title: xqbumu
     icon: profile

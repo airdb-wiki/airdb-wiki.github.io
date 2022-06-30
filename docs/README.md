@@ -34,10 +34,15 @@ features:
     details: K8S, Docker, etc..
     link: https://airdb.wiki/cloud-native/
 
-  - title: DeanCN
+  - title: Linux
     icon: slides
-    details: DeanCN's Personal Technical Documentation.
-    link: https://airdb.wiki/deancn/
+    details: Linux & Unix Skills
+    link: https://airdb.wiki/linux/
+
+  - title: DevOps
+    icon: slides
+    details: CI, CD, Monitoring, etc...
+    link: https://airdb.wiki/linux/
 
   - title: Airdb Academy
     icon: layout
