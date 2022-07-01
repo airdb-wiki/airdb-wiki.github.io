@@ -24,6 +24,11 @@ features:
     details: A tool for APIs swagger documentation.
     link: https://airdb.wiki/redoc/
 
+  - title: Style Guide
+    icon: slides
+    details: Coding styles and docs styles
+    link: https://airdb.wiki/styleguide/
+
   - title: Gateway
     icon: slides
     details: Gateway, DNS, WAF, Nginx
