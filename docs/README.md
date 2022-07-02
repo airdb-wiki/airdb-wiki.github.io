@@ -84,6 +84,11 @@ features:
     details: Learn English
     link: https://airdb.wiki/en/
 
+  - title: Foundation
+    icon: contrast
+    details: Airdb Software Foundation
+    link: https://airdb.wiki/fund
+
   - title: Airdb SSO
     icon: contrast
     details: Airdb SSO
