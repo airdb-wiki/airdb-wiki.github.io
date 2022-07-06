@@ -49,6 +49,11 @@ features:
     details: CI, CD, Monitoring, etc...
     link: https://airdb.wiki/devops/
 
+  - title: System Arch
+    icon: slides
+    details: System architecture, design model.
+    link: https://airdb.wiki/arch/
+
   - title: Airdb Academy
     icon: layout
     details: Happy learn here.
