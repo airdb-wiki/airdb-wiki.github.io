@@ -54,6 +54,11 @@ features:
     details: System architecture, design model.
     link: https://airdb.wiki/arch/
 
+  - title: Fintech
+    icon: slides
+    details: Financial Technology
+    link: https://airdb.wiki/fintech/
+
   - title: Airdb Academy
     icon: layout
     details: Happy learn here.
