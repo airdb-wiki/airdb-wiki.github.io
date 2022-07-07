@@ -44,6 +44,11 @@ features:
     details: Linux & Unix Skills
     link: https://airdb.wiki/linux/
 
+  - title: Operating System (OS)
+    icon: slides
+    details: Linux & Unix Skills, and Windows.
+    link: https://airdb.wiki/os/
+
   - title: DevOps
     icon: slides
     details: CI, CD, Monitoring, etc...
