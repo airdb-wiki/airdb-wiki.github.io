@@ -27,7 +27,7 @@ features:
   - title: Style Guide
     icon: slides
     details: Coding styles and docs styles
-    link: https://airdb.wiki/styleguide/
+    link: https://airdb.wiki/style/
 
   - title: Gateway
     icon: slides
