@@ -1,9 +1,9 @@
 ---
 home: true
 icon: home
-title: Project home
+title: home
 heroImage: /logo.svg
-heroText: Project name
+heroText: Community Wiki
 tagline: Together, coding with Love
 actions:
   - text: Guide 💡
