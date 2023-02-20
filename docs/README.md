@@ -99,20 +99,10 @@ features:
     details: Airdb Software Foundation
     link: https://airdb.wiki/fund
 
-  - title: Airdb SSO
-    icon: contrast
-    details: Airdb SSO
-    link: https://sso.airdb.net
-
   - title: Airdb Team
     icon: contrast
     details: Airdb Team Platform.
     link: https://airdb.team
-
-  - title: airdb.net
-    icon: contrast
-    details: https://airdb.net/
-    link: https://airdb.net/
 
   - title: Technical Support
     icon: more
