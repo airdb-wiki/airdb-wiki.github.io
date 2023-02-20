@@ -1,11 +1,10 @@
 dev:
-	pnpm run docs:dev
+	 yarn run docs:dev
 
-
-build:
-	pnpm run docs:build
-
+build: install
+	 yarn run docs:build
+	 > docs/.vuepress/dist/.nojekyll
+	 echo 'airdb.wiki' > docs/.vuepress/dist/CNAME
 
 install:
-	pnpm install --frozen-lockfile
-
+	yarn add -D vuepress@next

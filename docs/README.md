@@ -1,17 +1,17 @@
 ---
 home: true
 icon: home
-title: home
+title: Home
 heroImage: /logo.svg
 heroText: Community Wiki
 tagline: Together, coding with Love
 actions:
-  - text: Guide 💡
-    link: /guide/
-    type: primary
+  - text: How to Use 💡
+    link: /demo/
 
   - text: Github homepage 🏠
     link: https://github.com/airdb/
+    type: primary
 
 features:
   - title: Team Management
@@ -122,3 +122,16 @@ features:
 copyright: false
 footer: MIT Licensed | Copyright © 2015-present airdb.team
 ---
+
+## Community Basic Rules:
+
+🫱🏻‍🫲🏿 Be respectful
+
+👨🏼‍🚒
+Be helpful
+
+🙇🏼 Be polite
+
+🖖🏾 Be excellent to each other
+
+⛔ No spam
