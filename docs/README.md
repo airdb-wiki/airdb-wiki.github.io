@@ -6,12 +6,12 @@ heroImage: /logo.svg
 heroText: Community Wiki
 tagline: Together, coding with Love
 actions:
-  - text: How to Use 💡
-    link: /demo/
-
-  - text: Github homepage 🏠
-    link: https://github.com/airdb/
+  - text: 💡 Discord
+    link: https://discord.gg/VaYvxnAc
     type: primary
+
+  - text: 🏠 Github
+    link: https://github.com/airdb/
 
 features:
   - title: Team Management
