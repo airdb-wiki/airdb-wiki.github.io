@@ -4,7 +4,7 @@ icon: home
 title: Home
 heroImage: /logo.svg
 heroText: Community Wiki
-tagline: Together, coding with Love
+tagline: Together, Coding with Love and Ambition
 actions:
   - text: 💡 Discord
     link: https://discord.gg/VaYvxnAc
