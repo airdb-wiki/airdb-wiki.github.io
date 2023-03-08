@@ -22,7 +22,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
+          cache: npm
+      - name: Install PNPM
+          run: npm i -g pnpm
 
       - name: Build Docs
         env:
@@ -35,5 +37,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUBBOTTOKEN }}
           force_orphan: true
+          cname: airdb.wiki
+          enable_jekyll: true
           publish_branch: gh-pages
           publish_dir: docs/.vuepress/dist
