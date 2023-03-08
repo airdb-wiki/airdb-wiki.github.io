@@ -1,19 +1,22 @@
 {
-  "name": "airdb-wiki",
-  "version": "2.0.0",
-  "description": "A project of vuepress-theme-hope",
-  "license": "MIT",
-  "type": "module",
+  "name": "airdb-wiki.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs--clean-cache",
     "docs:dev": "vuepress dev docs",
     "docs:update-package": "yarn dlx vp-update"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.60",
+    "@vuepress/client": "2.0.0-beta.61",
     "vue": "^3.2.47",
-    "vuepress": "^2.0.0-beta.60",
-    "vuepress-theme-hope": "2.0.0-beta.178"
+    "vuepress": "2.0.0-beta.61",
+    "vuepress-theme-hope": "2.0.0-beta.190"
   }
 }

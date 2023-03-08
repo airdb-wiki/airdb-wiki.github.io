@@ -1,10 +1,10 @@
 dev:
-	 yarn run docs:dev
+	 pnpm docs:dev
 
 build: install
-	 yarn run docs:build
+	 pnpm docs:build
 	 > docs/.vuepress/dist/.nojekyll
 	 echo 'airdb.wiki' > docs/.vuepress/dist/CNAME
 
 install:
-	yarn add -D vuepress@next
+	pnpm add -D vuepress@next @vuepress/client@next vue vuepress-theme-hope
