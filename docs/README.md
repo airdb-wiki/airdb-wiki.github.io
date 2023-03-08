@@ -112,16 +112,3 @@ features:
 copyright: false
 footer: MIT Licensed | Copyright © 2015-present airdb.team
 ---
-
-## Community Basic Rules:
-
-🫱🏻‍🫲🏿 Be respectful
-
-👨🏼‍🚒
-Be helpful
-
-🙇🏼 Be polite
-
-🖖🏾 Be excellent to each other
-
-⛔ No spam
