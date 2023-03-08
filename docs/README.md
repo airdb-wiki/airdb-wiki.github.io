@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Home
-heroImage: /logo.svg
+heroImage: /family.png
 heroText: Community Wiki
 tagline: Together, Coding with Love and Ambition
 actions:
