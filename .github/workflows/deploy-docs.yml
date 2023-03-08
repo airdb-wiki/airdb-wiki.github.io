@@ -24,7 +24,7 @@ jobs:
           node-version: 18
           cache: npm
       - name: Install PNPM
-          run: npm i -g pnpm
+        run: npm i -g pnpm
 
       - name: Build Docs
         env:
