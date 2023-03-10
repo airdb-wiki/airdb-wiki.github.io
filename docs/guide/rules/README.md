@@ -1,6 +1,7 @@
 ---
-title: Foo feature
+title: Projects
 icon: config
+order: 1
 ---
 
 ## Introduction
@@ -9,5 +10,5 @@ We support foo feature, ...
 
 ## Details
 
-- [ray](ray.md)
+- [rules](rules.md)
 - ...

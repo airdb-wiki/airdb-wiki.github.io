@@ -1,5 +1,5 @@
 ---
-title: Slide page
+title: Slide - demo
 icon: slides
 layout: Slide
 ---

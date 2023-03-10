@@ -9,18 +9,18 @@ export const enNavbar = navbar([
     prefix: "/guide/",
     children: [
       {
-        text: "Bar",
+        text: "welcome",
         icon: "creative",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "more", link: "" }],
+        prefix: "intro/",
+        children: ["intro", { text: "...", icon: "more", link: "" }],
       },
       {
-        text: "Foo",
+        text: "Rules",
         icon: "config",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "more", link: "" }],
+        prefix: "rules/",
+        children: ["rules", { text: "...", icon: "more", link: "" }],
       },
     ],
   },
-  { text: "Join", icon: "discover", link: "/guide/join" },
+  { text: "Slides", icon: "slides", link: "/slides/" },
 ]);

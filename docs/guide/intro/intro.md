@@ -3,7 +3,7 @@ title: Rules
 icon: info
 ---
 
-## Community Basic Rules:
+## Community Basic Rules
 
 🫱 🏻<200d>🫲l🏿 Be respectful
 
