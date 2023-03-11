@@ -39,9 +39,9 @@ features:
     details: K8S, Docker, etc..
     link: https://airdb.wiki/cloud-native/
 
-  - title: Operating System (OS)
+  - title: Operating System
     icon: slides
-    details: Linux & Unix Skills, and Windows.
+    details: Linux & Unix Skills, and Windows OS.
     link: https://airdb.wiki/os/
 
   - title: DevOps
