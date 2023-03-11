@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Overall
 icon: config
 order: 1
 ---
