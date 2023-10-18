@@ -63,8 +63,9 @@ export default defineConfig({
 				{ label: 'mgmt', collapsed: true, autogenerate: { directory: 'mgmt' },},
 				{ label: 'network', collapsed: true, autogenerate: { directory: 'network' },},
 				{ label: 'OS',collapsed: true, autogenerate: { directory: 'os' },},
+				{ label: 'Gateway', collapsed: true, autogenerate: { directory: 'gateway' },},
 				{ label: 'security', collapsed: true, autogenerate: { directory: 'security' },},
-				{ label: 'style',collapsed: true, autogenerate: { directory: 'style' },}
+				{ label: 'style', collapsed: true, autogenerate: { directory: 'style' }, }
 			],
 		}),
 	],

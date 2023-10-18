@@ -3,8 +3,6 @@ title: Welcome
 description: A guide in my new Starlight docs site.
 ---
 
-## Welcome
-
 Hey there, I think you may interested in our team.
 
 So let me give a brief.
