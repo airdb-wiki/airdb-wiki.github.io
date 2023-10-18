@@ -1,0 +1,33 @@
+---
+title: Community Wiki
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: Together, Coding with Love and Ambition!
+  image:
+    file: ../../assets/family.png
+  actions:
+    - text: Example Guide
+      link: /guides/example/
+      icon: right-arrow
+      variant: primary
+    - text: Read the docs
+      link: ./docs/
+      icon: external
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Docs
+
+<CardGrid stagger>
+  <Card title="Cloud Native" icon="pencil">
+    xx
+  </Card>
+  <Card title="AI" icon="add-document">
+    ai
+  </Card>
+  <Card title="Operating System" icon="setting">
+    Learn more in [the Docs](/os/).
+  </Card>
+</CardGrid>

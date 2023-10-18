@@ -1,22 +1,17 @@
 {
-  "name": "airdb-wiki.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "airdb.wiki",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs--clean-cache",
-    "docs:dev": "vuepress dev docs",
-    "docs:update-package": "yarn dlx vp-update"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-theme-hope": "2.0.0-beta.190"
+  "dependencies": {
+    "@astrojs/starlight": "^0.11.1",
+    "astro": "^3.2.3",
+    "sharp": "^0.32.5"
   }
 }

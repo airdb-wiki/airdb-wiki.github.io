@@ -1,9 +1,13 @@
 dev:
-	 pnpm docs:dev
+	 pnpm dev
 
 build:
-	 pnpm i
-	 pnpm docs:build
+	pnpm i
+	pnpm build
 
 install:
-	pnpm add -D vuepress@next @vuepress/client@next vue vuepress-theme-hope
+	pnpm install
+
+upgrade:
+	pnpm upgrade @astrojs/starlight --latest
+
