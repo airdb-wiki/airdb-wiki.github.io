@@ -8,7 +8,7 @@ export default defineConfig({
 		starlight({
 			title: 'airdb.wiki',
 			social: {
-				github: 'https://github.com/airdb/wiki',
+				github: 'https://github.com/airdb-wiki/airdb-wiki.github.io',
 				discord: 'https://discord.com/invite/Mp4xttEqnF',
 			},
 			sidebar: [
