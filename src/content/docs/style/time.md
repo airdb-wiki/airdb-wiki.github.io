@@ -1,6 +1,6 @@
 ---
 title: Time Style
-description: 
+description: Time style
 ---
 
 ## Time Format
