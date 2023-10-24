@@ -17,12 +17,8 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Guide', link: '/guides/example', badge: 'Welcome' },
+						{ label: 'Today', link: '/guides/today', badge: 'New' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-					
 				},
 				{
 					label: 'Cloud-Native',
@@ -58,14 +54,16 @@ export default defineConfig({
 				{ label: 'Arch', collapsed: true, autogenerate: { directory: 'arch' },},
 				{ label: 'DevOps', collapsed: true, autogenerate: { directory: 'devops' },},
 				{ label: 'Fintech', collapsed: true, autogenerate: { directory: 'fintech' },},
-				{ label: 'fund', collapsed: true,	autogenerate: { directory: 'fund' },},
-				{ label: 'interview', collapsed: true, autogenerate: { directory: 'interview' },},
-				{ label: 'mgmt', collapsed: true, autogenerate: { directory: 'mgmt' },},
-				{ label: 'network', collapsed: true, autogenerate: { directory: 'network' },},
+				{ label: 'Fundation', collapsed: true,	autogenerate: { directory: 'fund' },},
+				{ label: 'Interview', collapsed: true, autogenerate: { directory: 'interview' },},
+				{ label: 'Team Management', collapsed: true, autogenerate: { directory: 'mgmt' },},
+				{ label: 'Network', collapsed: true, autogenerate: { directory: 'network' },},
 				{ label: 'OS',collapsed: true, autogenerate: { directory: 'os' },},
 				{ label: 'Gateway', collapsed: true, autogenerate: { directory: 'gateway' },},
-				{ label: 'security', collapsed: true, autogenerate: { directory: 'security' },},
-				{ label: 'style', collapsed: true, autogenerate: { directory: 'style' }, }
+				{ label: 'Security', collapsed: true, autogenerate: { directory: 'security' },},
+				{ label: 'Style', collapsed: true, autogenerate: { directory: 'style' }, },
+				{ label: 'Contribution', collapsed: true, autogenerate: { directory: 'contribution' }, },
+				{ label: 'About', collapsed: true, autogenerate: { directory: 'about' }, }
 			],
 		}),
 	],

@@ -1,5 +1,5 @@
 ---
-title: Time Style
+title: Time
 description: Time style
 ---
 
