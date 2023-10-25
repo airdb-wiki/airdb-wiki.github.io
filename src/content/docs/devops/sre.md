@@ -1,9 +1,7 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: SRE
+description: SRE 介绍
 ---
-
-# SRE 介绍
 
 Site Reliability Engineering
 
