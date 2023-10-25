@@ -1,9 +1,10 @@
 ---
 title:  http service
+description: http service
 ---
 
-
-# 接口命名规范
+http api 是我们最常用的一种 api，通常用于统计、监控、管理等场景，非常容易管理。
+但同时也有一些问题，容易存在滥用和安全问题。
 
 ## 内部外部区分
 
