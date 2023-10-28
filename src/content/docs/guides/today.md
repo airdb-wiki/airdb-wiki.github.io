@@ -7,7 +7,7 @@ description: airdb today
 
 ## Contact
 
-[![Chat Server](https://img.shields.io/badge/chat-discord-7289da.svg)](https://discord.gg/FSWXq4DmEj)
+[![Chat Server](https://img.shields.io/badge/chat-discord-7289da.svg)](https://discord.com/invite/Mp4xttEqnF)
 ![Email](https://img.shields.io/badge/-info@airdb.com-green?style=flat&logo=Email&logoColor=white)
 
 ## Tech stack
