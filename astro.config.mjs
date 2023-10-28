@@ -52,6 +52,7 @@ export default defineConfig({
 					]
 				},
 				{ label: 'Arch', collapsed: true, autogenerate: { directory: 'arch' },},
+				{ label: 'Academy', collapsed: true, autogenerate: { directory: 'academy' },},
 				{ label: 'DevOps', collapsed: true, autogenerate: { directory: 'devops' },},
 				{ label: 'Fintech', collapsed: true, autogenerate: { directory: 'fintech' },},
 				{ label: 'Fundation', collapsed: true,	autogenerate: { directory: 'fund' },},
