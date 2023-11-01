@@ -15,3 +15,9 @@ description: airdb today
 [![My Skills](https://skillicons.dev/icons?i=github,aws,gcp,azure,linux,bash,vim,git,kubernetes,docker,jenkins,nginx,grafana,vscode,nodejs,vscode,c,vue,go,lua,unity,ts,py,figma,svg,ps,postgres,raspberrypi,redis,bsd&perline=10)](https://skillicons.dev)
 
 Better Tech Better Life
+
+## Learn
+
+<https://supabase.com>
+
+https://www.taubyte.com
