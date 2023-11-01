@@ -14,6 +14,12 @@ dependencies:
   sharp:
     specifier: ^0.32.6
     version: 0.32.6
+  sitemap@3.0.3:
+    specifier: link:astrojs/sitemap@3.0.3
+    version: link:astrojs/sitemap@3.0.3
+  sitemap@latest:
+    specifier: link:astrojs/sitemap@latest
+    version: link:astrojs/sitemap@latest
 
 packages:
 
