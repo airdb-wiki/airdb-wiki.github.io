@@ -1,9 +1,7 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Individual Sponsors
+description: 个人捐赠
 ---
-
-# Individual Sponsors
 
 ## 官方捐赠方式
 
