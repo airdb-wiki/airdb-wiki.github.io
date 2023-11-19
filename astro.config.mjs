@@ -33,7 +33,6 @@ export default defineConfig({
 					items: [
 						{ label: 'Team Management', collapsed: true, autogenerate: { directory: 'mgmt' },},
 						{ label: 'Culture', collapsed: true, autogenerate: { directory: 'culture' },},
-						{ label: 'Academy', collapsed: true, autogenerate: { directory: 'academy' },},
 						{ label: 'Interview', collapsed: true, autogenerate: { directory: 'interview' },},
 						{ label: 'Style', collapsed: true, autogenerate: { directory: 'style' }, },
 					],
@@ -45,6 +44,9 @@ export default defineConfig({
 						{ label: 'OS',collapsed: true, autogenerate: { directory: 'os' },},
 						{ label: 'Gateway', collapsed: true, autogenerate: { directory: 'gateway' },},
 					],
+				},
+				{
+					label: 'Academy', collapsed: true, autogenerate: { directory: 'academy' }
 				},
 				{
 					label: 'About', collapsed: true,
