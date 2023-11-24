@@ -1,11 +1,6 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
----
-
----
-
-title: 网络
+title: network 网络
+description: network 网络
 ---
 
 姜知笔记: <https://www.gingerdoc.com/>

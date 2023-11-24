@@ -1,20 +1,15 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
----
-
----
-
 title: Raspberry 树莓派
+description: Raspberry 树莓派
 ---
 
-# 树莓派系统烧录
+树莓派系统烧录
 
 <https://stepneverstop.github.io/burn-system2raspberry-in-macos.html>
 
 ## 系统配置
 
-重新插拔usb
+重新插拔 usb
 
 ```
 cd /Volumes/boot  # 进入根系统
