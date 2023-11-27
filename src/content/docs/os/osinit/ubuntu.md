@@ -31,8 +31,7 @@ git clone https://github.com/airdb/.config ~/.config
 ```text
 pv4.ip_unprivileged_port_start=80
 pv4.ip_unprivileged_port_start=443
-
-
+```
 
 ## Ubuntu FAQ
 
