@@ -53,7 +53,9 @@ description: Blue Sky Rescuse
 
 ## 急救关系图
 
-```plantuml
+plantuml
+
+```text
 @startuml
 
 left to right direction
