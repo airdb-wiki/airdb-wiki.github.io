@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: bash programming
+description: bash programming
 ---
 
-# Bash Programming
+Bash Programming
 
 ## 学习地址
 

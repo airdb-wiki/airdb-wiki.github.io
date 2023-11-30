@@ -1,9 +1,8 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: awk & sed
+description: awk & sed
 ---
 
-# awk & sed
 
 ## awk
 

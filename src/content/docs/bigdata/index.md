@@ -11,7 +11,5 @@ DuckDB
 iceberg
 <https://iceberg.apache.org/>
 
-
-
 mprove
 <https://mprove.io/>

@@ -1,11 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: bash-completion
+description: Bash Completion
 ---
 
-# Bash Command for Developer
-
------
+Bash Command for Developer
 
 ### Bash Completion
 

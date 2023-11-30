@@ -43,3 +43,13 @@ pv4.ip_unprivileged_port_start=443
  apt-get update
  DEBIAN_FRONTEND=noninteractive apt-get install -y --reinstall ca-certificates
 ```
+
+## 2. ssh 无法登录问题
+
+通常文件或者目录权限导致，可以执行以下命令修复
+
+```bash
+chown -R ubuntu:ubuntu ~/.ssh
+chmod 700 ~/.ssh
+chmod 644 ~/.ssh/authorized_keys
+```

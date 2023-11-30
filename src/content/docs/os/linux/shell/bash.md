@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: bash
+description: bash
 ---
 
-# Bash
+Bash
 
 ## Profile 执行顺序
 
@@ -17,13 +17,13 @@ description: This is a page in my Starlight-powered site
 
 ## Bash 环境变量
 
-```
+```text
 # 公共
 $LOGNAME: 登录用户名
 $HOME: 当前用户家目录
 ```
 
-```
+```bash
 export PS1="[\u@\H \W]\\$ "
 export HISTTIMEFORMAT="%F %T `whoami` "
 export TMOUT=600    # 600 秒内用户无操作就字段断开终端
@@ -31,14 +31,14 @@ export TMOUT=600    # 600 秒内用户无操作就字段断开终端
 
 ## 常用别名
 
-```
+```bash
 alias ipsort="sort -t"." -k1,1n  -k2,2n  -k3,3n  -k4,4n"
 alias ipsortr="sort -t"." -k1,1nr -k2,2nr -k3,3nr -k4,4nr"
 ```
 
 ## 常用命令
 
-```
+```bash
 date +"%s"      # uninx timestamp
 date -d @1548987653     # linux, unix timestamp 转 "Fri Feb  1 10:20:53 CST 2019"
 sudo date -d 1548987653 # mac, unix timestamp 转 "Fri Feb  1 10:20:53 CST 2019"
