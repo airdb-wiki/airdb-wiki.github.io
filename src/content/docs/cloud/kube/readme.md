@@ -1,11 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Kubernetes
+description: demo
 ---
 
-# Kubernetes 集群
-
-Hack with kube.
+Kubernetes 集群 Hack with kube.
 
 [Kubernetes 源码阅读 - 田飞雨](https://blog.tianfeiyu.com/source-code-reading-notes/kubernetes/)
 

@@ -1,9 +1,17 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Docker
+description: Docker
 ---
 
-# Docker
+
+docker 清理
+
+```bash
+docker system prune
+docker volume prune
+```
+
+# Docker 屏幕显示问题
 
 ```
 sudo docker exec -it -e COLUMNS=$(tput cols) -e LINES=$(tput lines) airdb/go bash
@@ -25,20 +33,6 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-Run Docker as a non-root user
+## Run Docker as a non-root user (Rootless model)
 
-1. To run Docker as a non-root user, you have to add your user to the docker group.
-
-2. Setting
-
-```bash
-Create a docker group if there isn’t one:
-# sudo groupadd docker
-
-
-# Add your user to the docker group:
-$ sudo usermod -aG docker [non-root user]
-
-```
-
-4. Log out and log back in so that your group membership is re-evaluated.
+<https://docs.docker.com/engine/security/rootless/>

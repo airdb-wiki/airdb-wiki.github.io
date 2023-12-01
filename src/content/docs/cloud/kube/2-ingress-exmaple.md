@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Ingress 
+description: Ingress Example
 ---
 
-# Kubernetes Ingress with Nginx Example
+Kubernetes Ingress with Nginx Example
 
 [refer](https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html)
 

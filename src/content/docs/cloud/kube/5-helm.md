@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Helm
+description: helm
 ---
 
-# Helm V3 Installation
+Helm V3 Installation
 
 ## Requirements
 

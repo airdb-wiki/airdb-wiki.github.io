@@ -1,5 +1,5 @@
 ---
-title: Hello, World!
+title: Helm apps
 description: This is a page in my Starlight-powered site
 ---
 

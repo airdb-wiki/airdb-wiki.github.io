@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Kubernetes on macOS
+description: Kubernetes on macOS
 ---
 
-# Minikube Installation
+Minikube Installation
 
 ## Requirements
 
