@@ -13,7 +13,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Start Here',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Guide', link: '/guides/example', badge: 'Welcome' },
