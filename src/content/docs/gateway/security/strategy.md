@@ -27,17 +27,7 @@ general
 
 ## Planform
 
-|ID|Name|
-|---|---|
-| 0 | unknown |
-| 1 | pc_web |
-| 2 | ios_web |
-| 3 | ios_app |
-| 4 | ios_tablet |
-| 5 | android_web |
-| 6 | android_app |
-| 7 | android_tablet |
-| 8 | tv |
+OS +  app or web
 
 ## Action
 
@@ -52,3 +42,14 @@ general
 | 6 | flag | Verification |
 | 8 | client block | 客户端拦截 |
 | 9 | upgrade | 提示app 升级 |
+
+app_action
+web_action
+
+block:
+captcha: 包括短信、邮件、电话、图片、语音
+flag:  包括
+fakedata:
+forcelogin:
+force_upgrade
+upgrade:

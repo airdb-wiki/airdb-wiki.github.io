@@ -10,5 +10,10 @@ tmux 解决屏幕比例不协调的问题
 解决办法：再次进入 tmux 后，执行如下命令
 
 ```bash
+tmux new -s [your_tmux_name]
 tmux a -d -t [your_tmux_name]
+
+# 例如
+tmux new -s dean
+tmux a -d -t dean
 ```
