@@ -1,9 +1,7 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Git 分支的约束和管理
+description: Git 分支的约束和管理
 ---
-
-# Git 分支的约束和管理
 
 来源：[dxyoo7](https://dxyoo7.github.io/2016/09/22/git-branch-manage/)
 
@@ -73,7 +71,7 @@ Feature 分支一般只在开发者的 repo 里，而不是在 origin 上。
 
 - main
 
-```
+```bash
 # 合并release分支
 git checkout main 
 git pull origin main  --rebase
@@ -92,7 +90,7 @@ git push origin main
 
 - develop
 
-```
+```bash
 # 创建develop分支(第一次)
 git checkout main 
 git pull origin main  --rebase
@@ -121,7 +119,7 @@ git push origin develop
 
 - release
 
-```
+```bash
 # 从develop切出realse分支
 git checkout -b release
 
@@ -133,7 +131,7 @@ git push origin develop
 
 - feature
 
-```
+```bash
 # 从develop切出feature分支
 1) #拉取最新develop分支代码
 git checkout develop
@@ -161,13 +159,13 @@ git push origin develop
 
 - hotfix
 
-# 从 main 切出hotfix分支
+## 从 main 切出hotfix分支
 
 git checkout main
 git pull origin main  --rebase
 git checkout -b hotfix
 
-# main 合并分支hotfix
+## main 合并分支hotfix
 
 git checkout main
 git pull origin main  --rebase
@@ -175,7 +173,7 @@ git merge  --no-ff  hotfix
 git tag V1.1
 git push origin main
 
-# develop合并分支hotfix
+## develop合并分支hotfix
 
 git checkout develop
 git pull origin develop --rebase

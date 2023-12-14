@@ -1,9 +1,9 @@
 ---
-title: Example Reference
+title: Certbot
 description: A reference page in my new Starlight docs site.
 ---
 
-# Certbot
+Certbot
 
 <https://eff-certbot.readthedocs.io/en/stable/install.html>
 

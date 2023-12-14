@@ -17,7 +17,7 @@ vundle 搭建很方便
 
 ## 配置文件内容
 
-```
+```bash
 filetype off
 syntax on
 set rtp+=~/.vim/bundle/Vundle.vim

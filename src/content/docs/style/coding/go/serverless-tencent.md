@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: 腾讯云 Serverless
+description: 腾讯云 Serverless
 ---
 
-# 腾讯云 Serverless
+腾讯云 Serverless
 
 讨论区： <https://github.com/serverless/serverless-tencent/discussions>
 
@@ -17,7 +17,7 @@ npm install -g serverless
 
 1. serverless 配置文件 `.env`
 
-```
+```bash
 # tencent serverless config
 STAGE=test
 
@@ -36,7 +36,7 @@ TENCENT_REGION=ap-shanghai
 SERVERLESS_PLATFORM_VENDOR=tencent GLOBAL_ACCELERATOR_NA=true sls deploy --stage test
 ```
 
-2. serverless.yaml 配置文件
+## 2. serverless.yaml 配置文件
 
 Ref: <https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md>.
 

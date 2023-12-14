@@ -22,7 +22,15 @@ export default defineConfig({
 				},
 				{ label: 'AI', collapsed: true, autogenerate: { directory: 'ai' },},
 				{ label: 'Blockchain', collapsed: true, autogenerate: { directory: 'blockchain' },},
-				{ label: 'Cloud Computing', collapsed: true, autogenerate: { directory: 'cloud' }, },
+				{
+					label: 'Cloud Computing', collapsed: true, 
+					items: [
+						{ label: 'Network', collapsed: true, autogenerate: { directory: 'network' },},
+						{ label: 'OS',collapsed: true, autogenerate: { directory: 'os' },},
+						{ label: 'Gateway', collapsed: true, autogenerate: { directory: 'gateway' },},
+						{ label: 'Docker', collapsed: true, autogenerate: { directory: 'cloud/docker' },},
+					],
+				},
 				{ label: 'Data', collapsed: true, autogenerate: { directory: 'data' }, },
 				{ label: 'Energy', collapsed: true, autogenerate: { directory: 'energy' }, },
 				{ label: 'Fintech', collapsed: true, autogenerate: { directory: 'fintech' },},
@@ -35,14 +43,6 @@ export default defineConfig({
 						{ label: 'Culture', collapsed: true, autogenerate: { directory: 'culture' },},
 						{ label: 'Interview', collapsed: true, autogenerate: { directory: 'interview' },},
 						{ label: 'Style', collapsed: true, autogenerate: { directory: 'style' }, },
-					],
-				},
-				{
-					label: 'IaaS', collapsed: true,
-						items: [
-						{ label: 'Network', collapsed: true, autogenerate: { directory: 'network' },},
-						{ label: 'OS',collapsed: true, autogenerate: { directory: 'os' },},
-						{ label: 'Gateway', collapsed: true, autogenerate: { directory: 'gateway' },},
 					],
 				},
 				{

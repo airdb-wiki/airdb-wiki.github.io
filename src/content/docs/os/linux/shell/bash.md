@@ -5,6 +5,8 @@ description: bash
 
 Bash
 
+CMD ["/bin/bash", "--login", "--init-file", "/etc/profile"]
+
 ## Profile 执行顺序
 
 登录 Linux 时，首先启动 /etc/profile 文件，然后再启动用户目录下的
