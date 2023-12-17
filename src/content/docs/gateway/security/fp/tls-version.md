@@ -1,12 +1,8 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: HTTPS - TSL 指纹 version
+description: HTTPS - TSL 指纹 verion
 ---
 
----
-
-title: HTTPS - TSL 指纹
----
 
 ## TLS Versions
 

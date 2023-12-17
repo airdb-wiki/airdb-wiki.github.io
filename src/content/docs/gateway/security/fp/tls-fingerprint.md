@@ -1,9 +1,9 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: TLS Fingerprint
+description: TLS Fingerprint
 ---
 
-# TLS Fingerprint
+TLS Fingerprint
 
 <https://xz.aliyun.com/t/2531>
 

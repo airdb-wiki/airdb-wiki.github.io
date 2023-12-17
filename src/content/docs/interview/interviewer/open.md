@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Opening
+description: Opening
 ---
 
-# Open
+Openning
 
 Q:  How will you open an interview when you unsure of how to pronounce the candidate's name?
 

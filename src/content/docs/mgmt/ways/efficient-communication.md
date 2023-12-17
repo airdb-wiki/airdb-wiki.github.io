@@ -1,9 +1,7 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: 高效沟通
+description: 高效沟通
 ---
-
-# 高效沟通
 
 Efficient communication
 

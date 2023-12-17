@@ -4,14 +4,12 @@ description: This is a page in my Starlight-powered site
 ---
 
 如何参与贡献
-========================
 
 - Github 提交 PR, 地址: github.com/airdb/fun
 - Github 提交 issues, 地址: github.com/airdb/fun/issues
 - 写邮件给 <info@airdb.com>
 
 Github 如何提交 PR
-========================
 
 > **Tip for new contributors:**
 > Take a look at [https://github.com/firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions) for helpful information on contributing.
@@ -46,7 +44,7 @@ git remote add pullrequest https://github.com/deanchina/docs
 
   新建工作分支
 
-```
+```bash
 git checkout -b dev
 
 git branch
@@ -62,7 +60,7 @@ git branch
 
   提交到贡献者 Github 上
 
-```
+```bash
 git add .
 git commit -m"pull request"
 ```

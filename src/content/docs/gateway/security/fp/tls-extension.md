@@ -1,6 +1,6 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: HTTP TLS Extension
+description: HTTP TLS Extension
 ---
 
 TLS extension

@@ -3,7 +3,7 @@ title: minio
 description: minio
 ---
 
-# minio
+minio
 
 ## Basic Usage
 

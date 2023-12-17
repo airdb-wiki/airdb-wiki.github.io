@@ -1,9 +1,9 @@
 ---
-title: Hello, World!
-description: This is a page in my Starlight-powered site
+title: Asking
+description: Asking
 ---
 
-# Asking
+Asking
 
 ## 1. Interview Questions on CV
 

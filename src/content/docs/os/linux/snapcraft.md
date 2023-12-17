@@ -5,7 +5,7 @@ description: This is a page in my Starlight-powered site
 
 Ubuntu Snapcraft
 
-```
+```bash
 snapcraft push --release edge *.snap
 Pushing airdb_1.0_amd64.snap
 After pushing, an attempt will be made to release to 'edge'
@@ -22,7 +22,7 @@ latest   amd64   stable     -          -
 The 'edge' channel is now open.
 ```
 
-```
+```bash
 snap/snapcraft.yaml
 
 name: airdb
@@ -47,7 +47,7 @@ apps:
 
 # Commands
 
-```
+```bash
 snapcraft  register xxx-project
 snapcraft clean airdb-adb -s pull
 snapcraft push stable stable  *.snap

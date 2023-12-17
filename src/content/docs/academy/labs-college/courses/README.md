@@ -3,7 +3,7 @@ title: Courses
 description: Courses
 ---
 
-# Labs College
+Labs College
 
 ## Introduction
 

@@ -9,30 +9,33 @@ description: 虚拟机工具
 
 同时，如果虚拟机被破坏，只需要重新创建即可，不影响物理机系统。
 
-随着 docker 容器方案的出现，当前大多数 linux 环境都可以基于 docker 进行轻量虚拟化。 
-
+随着 docker 容器方案的出现，当前大多数 linux 环境都可以基于 docker 进行轻量虚拟化。
 
 ## OrbStack
 
-https://docs.orbstack.dev/quick-start
-
+<https://docs.orbstack.dev/quick-start>
 
 ## Vagrant
 
 Step 1: Setup
+
 - Install [vagrant](https://www.vagrantup.com/downloads.html)
 
 Step 2: Prepare for Vagrant
+
 ```plain
 git clone https://github.com/airdb/docker
 cd docker/vagrant
 ```
+
 or
+
 ```plain
 wget https://raw.githubusercontent.com/airdb/docker/master/vagrant/Vagrantfile -p $your_vagrant_path
 ```
 
 Step 3: Create vms and Deploy service
+
 ```plain
   vagrant up
   vagrant status
@@ -43,7 +46,6 @@ Step 4: Clean bad vagrant information.
 
 `vagrant global-status --prune`
 
-
 ## Virtualbox
 
-https://www.virtualbox.org/wiki/Downloads
+<https://www.virtualbox.org/wiki/Downloads>

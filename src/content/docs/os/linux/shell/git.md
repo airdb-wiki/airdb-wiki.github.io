@@ -3,7 +3,7 @@ title: git
 description: git
 ---
 
-# Git
+Git
 
 ### Branch Naming
 
