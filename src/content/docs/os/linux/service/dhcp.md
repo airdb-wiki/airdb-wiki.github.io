@@ -17,7 +17,7 @@ Best Practice
 
 ## dhcp/conf/dhcpd.conf
 
-```conf
+```txt
  include "/var/www/html/autoinstall/dhcp/host";
  ddns-update-style interim;
  ignore client-updates;
@@ -53,7 +53,7 @@ Best Practice
 
 ## dhcp/conf/hosts
 
-```conf
+```txt
  host rmc1.airdb.io {hardware ethernet 00:01:02:03:04:80 ;fixed-address 10.0.0.253 ;}
  host dean.airdb.io { hardware ethernet f0:76:1c:02:b1:10 ;fixed-address 10.0.0.251;}
  
@@ -67,7 +67,7 @@ Best Practice
 
 ## /etc/xinetd.d/tftp
 
-```conf
+```txt
  service tftp
  {
   socket_type  = dgram

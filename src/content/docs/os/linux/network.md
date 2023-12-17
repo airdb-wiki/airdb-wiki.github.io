@@ -8,12 +8,12 @@ description: network 网络
 ## Network TCP Connection
 
 ```bash
-apt-get install iproute2
+apt install iproute2
 ss
 ```
 
 ```bash
-apt-get install net-tools
+apt install net-tools
 netstat  -anlp | grep TIME_WAIT
 ```
 
