@@ -4,6 +4,13 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	base: '',
+	i18n: {
+		defaultLocale: "zh-cn",
+		locales: ["zh-cn", "en"],
+		routing: {
+			prefixDefaultLocale: false
+		}
+	},
 	integrations: [
 		starlight({
 			title: 'airdb.wiki',
