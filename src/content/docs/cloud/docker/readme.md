@@ -4,6 +4,11 @@ description: Docker
 ---
 
 
+##  基础镜像制作
+
+- https://github.com/moby/moby/blob/master/contrib/mkimage-yum.sh
+- https://github.com/gliderlabs/docker-alpine/blob/master/builder/scripts/mkimage-alpine.bash
+
 docker 清理
 
 ```bash
@@ -35,4 +40,10 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 
 ## Run Docker as a non-root user (Rootless model)
 
+<https://docs.docker.com/engine/security/rootless/>
+
+Manage Docker as a non-root user
+<https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user>
+
+Run the Docker daemon as a non-root user (Rootless mode)
 <https://docs.docker.com/engine/security/rootless/>
