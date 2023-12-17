@@ -19,7 +19,7 @@ apt install supervisor
 
 ## 配置
 
-```conf
+```txt
 # 配置文件
 #/etc/supervisor/supervisord.conf
 #/etc/supervisor/conf.d/supervisord.conf
