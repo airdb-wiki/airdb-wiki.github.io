@@ -3,7 +3,7 @@ title: 高效沟通
 description: 高效沟通
 ---
 
-# 高效沟通
+高效沟通
 
 Efficient communication
 

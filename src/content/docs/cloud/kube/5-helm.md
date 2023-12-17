@@ -13,7 +13,7 @@ helm repo add stable <https://kubernetes-charts.storage.googleapis.com>
 
 [mysql](https://8gwifi.org/docs/kube-mysql.jsp)
 
-```
+```bash
 helm install mysql --set mysqlRootPassword=secret stable/mysql
 MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysql -o jsonpath="{.data.mysql-root-password}" | base64 --decode; echo)
 kubectl port-forward svc/mysql 3306

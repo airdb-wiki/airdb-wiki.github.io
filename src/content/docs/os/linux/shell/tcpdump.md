@@ -22,7 +22,7 @@ sudo tcpdump -i bond0.1000  -nnAAAA  | grep -A 20 -B 3  airdb.io
 
 ## wireshake filters
 
-```text
+```txt
 tls.handshake.extensions_server_name == "ja3.airdb.dev"
 ssl.handshake.type == 1 && ip.dst == 127.0.0.1
 ```

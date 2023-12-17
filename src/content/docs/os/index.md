@@ -23,20 +23,20 @@ Step 1: Setup
 
 Step 2: Prepare for Vagrant
 
-```plain
+```bash
 git clone https://github.com/airdb/docker
 cd docker/vagrant
 ```
 
 or
 
-```plain
+```bash
 wget https://raw.githubusercontent.com/airdb/docker/master/vagrant/Vagrantfile -p $your_vagrant_path
 ```
 
 Step 3: Create vms and Deploy service
 
-```plain
+```bash
   vagrant up
   vagrant status
   vagrant ssh

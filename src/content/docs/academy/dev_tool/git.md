@@ -4,11 +4,11 @@ description: git 常用命令
 ---
 
 
-# Git
+Git
 
-### Branch Naming
+## Branch Naming
 
-```text
+```txt
 feat: add hat wobble
 ^--^  ^------------^
 |     |

@@ -11,7 +11,7 @@ http api 是我们最常用的一种 api，通常用于统计、监控、管理�
 by default, all of the api are external
 but we can use `/internal`  as internal api.
 
-```text
+```txt
 /internal/api/v1/
 ```
 
@@ -19,7 +19,7 @@ but we can use `/internal`  as internal api.
 
 常见的场景有：
 
-```text
+```txt
 /internal/metrics
 /internal/healthz
 /internal/admin/xxx

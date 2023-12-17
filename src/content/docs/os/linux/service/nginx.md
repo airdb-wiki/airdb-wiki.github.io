@@ -12,7 +12,7 @@ Nginx
     conf.d/upstream.conf 中存放upstream配置，
     conf.d/host.conf 中存放 location 等其他配置。
 
-```conf
+```txt
 # For more information on configuration, see:
 #   * Official English Documentation: http://nginx.org/en/docs/
 #   * Official Russian Documentation: http://nginx.org/ru/docs/

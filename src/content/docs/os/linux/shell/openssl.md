@@ -3,6 +3,7 @@ title: openssl
 description: openssl
 ---
 
+```bash
 $ openssl commands
 
         openssl x509 -text -in ssl.chain.crt
@@ -28,3 +29,5 @@ Lego:
 
         lego --email xxx@gmail.com --dns tencentcloud --domains=*.domain1.com --domains=*.domain2.com \
                 renew --days=30 --renew-hook="nginx -s reload"
+
+```

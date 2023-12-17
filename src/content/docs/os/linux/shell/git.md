@@ -7,7 +7,7 @@ Git
 
 ### Branch Naming
 
-```text
+```txt
 feat: add hat wobble
 ^--^  ^------------^
 |     |

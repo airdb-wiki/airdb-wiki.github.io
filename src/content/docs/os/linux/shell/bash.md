@@ -19,7 +19,7 @@ CMD ["/bin/bash", "--login", "--init-file", "/etc/profile"]
 
 ## Bash 环境变量
 
-```text
+```txt
 # 公共
 $LOGNAME: 登录用户名
 $HOME: 当前用户家目录

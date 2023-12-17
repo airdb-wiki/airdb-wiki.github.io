@@ -24,7 +24,7 @@ done
 
 ## 一些 Debug 技巧
 
-```
+```bash
 set -x
 set -e
 export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
@@ -37,7 +37,7 @@ set +x
 ::: tip
 日志输出
 
-```
+```bash
 _log() {
     if [ "$_DEBUG" == "true" ]; then
         echo 1>&2 "$@"

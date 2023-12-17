@@ -26,7 +26,7 @@ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion"
 
 Restart your bash session:
 
-```
+```bash
 source ~/.bash_profile
 ```
 

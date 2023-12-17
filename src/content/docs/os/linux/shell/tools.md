@@ -19,13 +19,5 @@ Command for Developer
 
 [terraform](https://www.terraform.io/docs/providers/tencentcloud/r/instance.html)
 
-## docker
-
-```
-sudo docker exec -it -e COLUMNS=$(tput cols) -e LINES=$(tput lines) airdb/go bash
-```
-
-```
-tmux: 一个优秀的终端复用软件，类似GNU Screen
-jq: Command-line JSON processor, https://github.com/stedolan/jq
-```
+- tmux: 一个优秀的终端复用软件，类似GNU Screen
+- jq: Command-line JSON processor, <https://github.com/stedolan/jq>

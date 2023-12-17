@@ -9,6 +9,7 @@ Kubernetes 集群 Hack with kube.
 
 <https://feisky.gitbooks.io/kubernetes/content/introduction/cluster.html>
 
+```bash
 # helm install mina-api mina-api/ --set service.gdbc==""
 
 # helm install mina-api mina-api/ --set service.gdbc=""
@@ -18,6 +19,7 @@ Kubernetes 集群 Hack with kube.
 docker exec -it --env COLUMNS=`tput cols` --env LINES=`tput lines`  dns bash
 
 helm install --name mysql --set mysqlRootPassword=rootpassword,mysqlUser=mysql,mysqlPassword=my-password,mysqlDatabase=mydatabase,persistence.existingClaim=mysql-pvc stable/mysql
+```
 
 当确定了所需的一切后，请记住：
 

@@ -28,7 +28,7 @@ git clone https://github.com/airdb/.config ~/.config
 
 增加 system 端口配置, 将一下内容添加到 `/etc/sysctl.conf` (/etc/sysctl.d/99-sysctl.conf) 文件中
 
-```text
+```txt
 pv4.ip_unprivileged_port_start=80
 pv4.ip_unprivileged_port_start=443
 ```

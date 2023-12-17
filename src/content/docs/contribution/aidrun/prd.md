@@ -55,7 +55,7 @@ description: Blue Sky Rescuse
 
 plantuml
 
-```text
+```txt
 @startuml
 
 left to right direction
