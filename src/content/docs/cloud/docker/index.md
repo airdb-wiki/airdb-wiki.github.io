@@ -4,16 +4,18 @@ description: Docker
 ---
 
 
-##  基础镜像制作
+## 基础镜像制作
 
-- https://github.com/moby/moby/blob/master/contrib/mkimage-yum.sh
-- https://github.com/gliderlabs/docker-alpine/blob/master/builder/scripts/mkimage-alpine.bash
+- <https://github.com/moby/moby/blob/master/contrib/mkimage-yum.sh>
+- <https://github.com/gliderlabs/docker-alpine/blob/master/builder/scripts/mkimage-alpine.bash>
 
-docker 清理
+## docker 清理
 
 ```bash
-docker system prune
-docker volume prune
+docker system ls
+docker volume ls
+docker network ls
+docker context ls
 ```
 
 # Docker 屏幕显示问题

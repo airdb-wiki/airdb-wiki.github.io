@@ -17,19 +17,19 @@ themes/book/layouts/partials/docs/gitalk.html
 
 2. enable gittalk
 
-```
+```html
 # themes/book/layouts/partials/docs/footer.html
 {{ partial "docs/gitalk.html" . }}
 ```
 
 3. 站点统计
 
-```
+```html
 # themes/book/layouts/partials/docs/html-head.html
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 ```
 
-```
+```html
 # themes/book/layouts/partials/docs/footer.html
 <span id="busuanzi_container_site_pv">本站总访问量: <span id="busuanzi_value_site_pv"></span> 次</span>
 <span id="busuanzi_container_site_uv">您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者</span>
@@ -37,7 +37,7 @@ themes/book/layouts/partials/docs/gitalk.html
 
 4. 添加 IOS logo
 
-```
+```html
 # themes/book/layouts/partials/docs/html-head.html
 <link rel="apple-touch-icon" sizes="128x128" href="logo.png">
 ```
