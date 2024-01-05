@@ -10,3 +10,11 @@ business sense/mindset 它指的是一种专注于商业目标和商业成功的
 A strong business mindset is essential for success in the competitive world of commerce. (在竞争激烈的商业世界中，强烈的商业思维是成功的关键。)
 He has a great business mindset, always thinking of ways to increase profits and reduce costs. (他有着很棒的商业思维，总是想着增加利润和降低成本的方法。)
 Developing a business mindset is crucial for students who want to pursue careers in business. (对于想从事商业职业的学生来说，培养商业思维是至关重要的。)
+
+## 钱袋子理论
+
+一个创业者， 应该要有三个钱包:
+
+- 1. 你实际有多少钱
+- 2. 有多少信用，能调用多少钱
+- 3. 别人以为你有多少钱
