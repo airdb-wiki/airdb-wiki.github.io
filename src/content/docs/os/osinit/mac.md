@@ -61,3 +61,13 @@ sudo scutil --set HostName 新的主机名
   ServerAliveInterval 50
   #允许超时的次数，一般都会响应
   ServerAliveCountMax 3
+
+## iterm2 粘贴时有多余字符 0~ 1~
+
+问题： 在终端黏贴出现多余字符串 00~ 01~
+
+解决： 在终端输入一下命令
+
+```bash
+printf '\e[?2004l'
+```
