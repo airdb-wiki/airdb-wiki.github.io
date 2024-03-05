@@ -1,51 +1,42 @@
 ---
-title:  虚拟机工具
-description: 虚拟机工具
+title:  操作系统课程
+description: 操作系统课程
 ---
 
-虚拟机工具主要用来学习和研究
-虚拟机可以让用户在一台物理计算机上运行多个操作系统，每个操作系统运行在一个独立的虚拟机中。
-这使得用户可以同时运行不同操作系统的软件，例如 Windows、Linux、Mac OS 等。
 
-同时，如果虚拟机被破坏，只需要重新创建即可，不影响物理机系统。
+## 课程安排
 
-随着 docker 容器方案的出现，当前大多数 linux 环境都可以基于 docker 进行轻量虚拟化。
+### 初级课程
 
-## OrbStack
+- 第 1  操作系统理论
+- 第 2  Linux 系统
+- 第 3  软件安装和文件操作
+- 第 4  系统的进程、服务和任务
+- 第 5  用户和用户组、文件权限和文件系统层次结构
+- 第 6  网络、文本处理和脚本编程
+- 第 7  C++ / Python 开发
+- 第 8  容器隔离技术和 Docker 容器管理软件
+- 第 9  脚本编程进阶
+- 第 10 课程总结
 
-<https://docs.orbstack.dev/quick-start>
+### 进阶课程
 
-## Vagrant
+- Linux 系统管理
+- Linux 网络管理
+- Linux 安全管理
+- Linux 性能管理
+- Linux 存储管理
+- Linux 内核
+- Linux 诊断和故障排除
+- Linux 优化和调整
+- Linux 课程总结
 
-Step 1: Setup
+## 高级课程
 
-- Install [vagrant](https://www.vagrantup.com/downloads.html)
-
-Step 2: Prepare for Vagrant
-
-```bash
-git clone https://github.com/airdb/docker
-cd docker/vagrant
-```
-
-or
-
-```bash
-wget https://raw.githubusercontent.com/airdb/docker/master/vagrant/Vagrantfile -p $your_vagrant_path
-```
-
-Step 3: Create vms and Deploy service
-
-```bash
-  vagrant up
-  vagrant status
-  vagrant ssh
-```
-
-Step 4: Clean bad vagrant information.
-
-`vagrant global-status --prune`
-
-## Virtualbox
-
-<https://www.virtualbox.org/wiki/Downloads>
+- Docker 容器
+- Kubernetes 容器编排
+- Linux 容器网络
+- 大规模集群
+- 流量调度
+- 架构设计
+- 容灾和备份
