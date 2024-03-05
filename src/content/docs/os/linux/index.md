@@ -53,3 +53,7 @@ Linux 是一种自由和开放源代码的类 Unix 操作系统。它由林纳�
 ## Linux Learning
 
 主要提供一种学习 Linux 的思路，以及一些学习资源。
+
+在线阅读：<https://101.lug.ustc.edu.cn/>
+
+GitHub 仓库：<https://github.com/ustclug/Linux101-docs>
