@@ -13,7 +13,7 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
-  integrations: [starlight({
+  integrations: [expressiveCode(), starlight({
     title: 'airdb.wiki',
     social: {
       github: 'https://github.com/airdb-wiki/airdb-wiki.github.io',
@@ -160,5 +160,5 @@ export default defineConfig({
         }
       }]
     }]
-  }), expressiveCode()]
+  })]
 });
