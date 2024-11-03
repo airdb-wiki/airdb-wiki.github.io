@@ -16,6 +16,8 @@ tasks:
     cmds:
       - pnpm install
       - pnpm add -D starlight-links-validator
+      - pnpm add astro-expressive-code
+
 
   update:
     desc: Update astro to the latest version

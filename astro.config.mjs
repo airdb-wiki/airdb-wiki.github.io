@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 import markdocGrammar from './grammars/markdoc.tmLanguage.json';
+import expressiveCode from 'astro-expressive-code';
 
 export const locales = {
 	root: { label: 'English', lang: 'en' },
@@ -19,19 +20,15 @@ export default defineConfig({
 	site,
 	trailingSlash: 'always',
 	integrations: [
+		expressiveCode(),
 		starlight({
 			title: 'airdb.wiki',
-			logo: {
-				light: '/src/assets/logo-light.svg',
-				dark: '/src/assets/logo-dark.svg',
-				replacesTitle: true,
+			social: {
+				github: 'https://github.com/airdb-wiki/airdb-wiki.github.io',
+				discord: 'https://discord.com/invite/Mp4xttEqnF'
 			},
 			editLink: {
-				baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
-			},
-			social: {
-				github: 'https://github.com/withastro/starlight',
-				discord: 'https://astro.build/chat',
+				baseUrl: 'https://github.com/airdb-wiki/airdb-wiki.github.io/edit/main/docs/',
 			},
 			head: [
 				{
@@ -41,14 +38,6 @@ export default defineConfig({
 						'data-site': 'EZBHTSIG',
 						defer: true,
 					},
-				},
-				{
-					tag: 'meta',
-					attrs: { property: 'og:image', content: ogUrl },
-				},
-				{
-					tag: 'meta',
-					attrs: { property: 'og:image:alt', content: ogImageAlt },
 				},
 			],
 			customCss: process.env.NO_GRADIENTS ? [] : ['./src/assets/landing.css'],
