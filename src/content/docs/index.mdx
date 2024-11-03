@@ -7,19 +7,20 @@ hero:
   image:
     file: ../../assets/family.png
   actions:
-    - text: Example Guide
+    - text: Get started
       link: /guides/example/
       icon: right-arrow
       variant: primary
-    - text: Read the docs
-      link: ./zh-cn/
+    - text: Visit on Github
       icon: external
+      variant: minimal
+      link: https://github.com/airdb/
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
-
-<html>
-<link rel="apple-touch-icon" href="/favicon.png" />
+import AboutAstro from "~/components/about-astro.astro";
+import TestimonialGrid from "~/components/testimonial-grid.astro";
+import Testimonial from "~/components/testimonial.astro";
 
 ## Docs of `ABCDS`
 
@@ -66,4 +67,34 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
   </Card>
 </CardGrid>
 
-</html>
+<TestimonialGrid title="What people are saying">
+  <Testimonial
+    name="bao bei hui jia"
+    handle="rachelnabors"
+    cite="https://twitter.com/astrodotbuild/status/1724934718745915558"
+  >
+
+With its commitment to excellence and forward-thinking approach, AIRDB is redefining how companies solve real-world challenges and unlock true commercial value
+
+  </Testimonial>
+
+  <Testimonial
+    name="Tangyi Food"
+    handle="SylwiaVargas"
+    cite="https://twitter.com/astrodotbuild/status/1724934718745915558"
+  >
+
+AIRDB stands at the forefront of technological innovation, seamlessly integrating AI and advanced digital solutions to empower businesses with unparalleled intelligence and efficiency.
+
+  </Testimonial>
+
+</TestimonialGrid>
+
+<AboutAstro title="Brought Values to You">
+AIRDB is an innovative AI-driven startup committed to the philosophy of "Empowering Business Intelligence with AI Inside." 
+We leverage cutting-edge ABCDS technologies—AI, Blockchain, Cloud, Data, and Security—to deliver a broad spectrum of professional software solutions. 
+Our mission is to help clients tackle complex business challenges, optimize processes, unlock the value of data, and drive meaningful commercial outcomes.
+
+[Learn about Airdb](https://github.com/airdb/)
+
+</AboutAstro>

@@ -24,18 +24,15 @@ export default defineConfig({
 		starlight({
 			title: 'airdb.wiki',
 			social: {
-				github: 'https://github.com/airdb-wiki/airdb-wiki.github.io',
+				github: 'https://github.com/airdb/',
 				discord: 'https://discord.com/invite/Mp4xttEqnF'
-			},
-			editLink: {
-				baseUrl: 'https://github.com/airdb-wiki/airdb-wiki.github.io/edit/main/docs/',
 			},
 			head: [
 				{
 					tag: 'script',
 					attrs: {
 						src: 'https://cdn.usefathom.com/script.js',
-						'data-site': 'EZBHTSIG',
+						'data-site': 'airdb',
 						defer: true,
 					},
 				},
@@ -189,35 +186,9 @@ export default defineConfig({
 						'zh-CN': '关于',
 					},
 					collapsed: true,
-					items: [{
-						label: 'Contribution',
-						translations: {
-							'zh-CN': '贡献',
-						},
-						collapsed: true,
-						autogenerate: {
-							directory: 'contribution'
-						}
-					}, {
-						label: 'Fundation',
-						translations: {
-							'zh-CN': '基金会',
-						},
-						collapsed: true,
-						autogenerate: {
-							directory: 'fund'
-						}
-					}, {
-						label: 'About',
-						translations: {
-							'zh-CN': '关于',
-						},
-						collapsed: true,
-						autogenerate: {
+					autogenerate: {
 							directory: 'about'
 						},
-					},
-				],
 			},
 		],
 		expressiveCode: { shiki: { langs: [markdocGrammar] } },
