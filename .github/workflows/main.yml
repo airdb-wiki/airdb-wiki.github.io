@@ -1,0 +1,44 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - "*"
+      - "!gh-pages"
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Install Task and Dependencies
+        uses: arduino/setup-task@v2
+
+      - name: Install and build
+        run: task install && task build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUBBOTTOKEN }}
+          force_orphan: true
+          cname: airdb.wiki
+          #enable_jekyll: true
+          publish_branch: gh-pages
+          publish_dir: ./dist/
+          full_commit_message: deploy ${{ github.event.head_commit.message }}
