@@ -16,6 +16,14 @@ const site = NETLIFY_PREVIEW_SITE || 'https://airdb.wiki/';
 const ogUrl = new URL('og.jpg?v=1', site).href;
 const ogImageAlt = 'Make your docs shine with Starlight';
 
+
+const title = 'Learn. Build. Grow. Together.';
+const description =
+	'Learn from the web’s leading experts. Build something new. Grow your career. Let’s do it together.';
+
+const shareTitle = 'Learn With Jason';
+
+
 export default defineConfig({
 	site,
 	trailingSlash: 'always',
