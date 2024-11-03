@@ -11,7 +11,7 @@ export const locales = {
 /* https://docs.netlify.com/configure-builds/environment-variables/#read-only-variables */
 const NETLIFY_PREVIEW_SITE = process.env.CONTEXT !== 'production' && process.env.DEPLOY_PRIME_URL;
 
-const site = NETLIFY_PREVIEW_SITE || 'https://starlight.astro.build/';
+const site = NETLIFY_PREVIEW_SITE || 'https://airdb.wiki/';
 const ogUrl = new URL('og.jpg?v=1', site).href;
 const ogImageAlt = 'Make your docs shine with Starlight';
 
@@ -20,7 +20,7 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		starlight({
-			title: 'Starlight',
+			title: 'airdb.wiki',
 			logo: {
 				light: '/src/assets/logo-light.svg',
 				dark: '/src/assets/logo-dark.svg',
@@ -60,48 +60,179 @@ export default defineConfig({
 						'zh-CN': '从这里开始',
 					},
 					items: [
-						'getting-started',
-						'manual-setup',
 						{
-							label: 'Environmental Impact',
-							slug: 'environmental-impact',
-							translations: {
-								'zh-CN': '环境影响',
-							},
+						label: 'Guide',
+						translations: {
+							'zh-CN': '指南',
 						},
-					],
+						link: '/guides/example',
+						badge: 'Welcome',
+						},
+						{
+							label: 'Today',
+							translations: {
+								'zh-CN': '今日',
+							},
+							link: '/guides/today',
+							badge: 'New',
+					  }]
 				},
 				{
-					label: 'Guides',
+					label: 'AI',
 					translations: {
-						'zh-CN': '指南',
+						'zh-CN': '人工智能',
 					},
-					autogenerate: { directory: 'guides' },
+					collapsed: true,
+					autogenerate: { directory: 'ai' },
 				},
 				{
-					label: 'Components',
+					label: 'Blockchain',
 					translations: {
-						'zh-CN': '组件',
+						'zh-CN': '区块链',
 					},
-					autogenerate: { directory: 'components' },
+					collapsed: true,
+					autogenerate: { directory: 'blockchain' },
 				},
 				{
-					label: 'Reference',
+					label: 'Cloud Computing',
 					translations: {
-						'zh-CN': '参考',
+						'zh-CN': '云计算',
 					},
+					collapsed: true,
 					autogenerate: { directory: 'reference' },
 				},
 				{
-					label: 'Resources',
+					label: 'BigData',
 					translations: {
-						'zh-CN': '资源',
+						'zh-CN': '大数据',
 					},
-					autogenerate: { directory: 'resources' },
+					collapsed: true,
+					autogenerate: {
+						directory: 'data'
+					},
 				},
-			],
-			expressiveCode: { shiki: { langs: [markdocGrammar] } },
-			plugins: process.env.CHECK_LINKS
+				{
+					label: 'Security',
+					translations: {
+						'zh-CN': '安全',
+					},
+					collapsed: true,
+					autogenerate: {
+				  directory: 'security'
+					},
+				},
+				{
+					label: 'Fintech',
+					translations: {
+						'zh-CN': '金融科技',
+					},
+					collapsed: true,
+					autogenerate: {
+						directory: 'fintech'
+					},
+				},
+
+				{
+					label: 'DevOps',
+					translations: {
+						'zh-CN': '开发运维',
+					},
+					collapsed: true,
+					autogenerate: {
+				  directory: 'devops'
+					},
+				},
+				{
+					label: 'Team',
+					translations: {
+						'zh-CN': '团队',
+					},
+					collapsed: true,
+					items: [{
+						label: 'Team Management',
+						translations: {
+							'zh-CN': '团队管理',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'mgmt'
+						}
+					}, {
+						label: 'Culture',
+						translations: {
+							'zh-CN': '文化',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'culture'
+						}
+					}, {
+						label: 'Interview',
+						translations: {
+							'zh-CN': '面试',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'interview'
+						}
+					}, {
+						label: 'Style',
+						translations: {
+							'zh-CN': '风格',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'style'
+						}
+					}]
+				  }, {
+					label: 'Academy',
+					translations: {
+						'zh-CN': '学院',
+					},
+					collapsed: true,
+					autogenerate: {
+						directory: 'academy'
+					}
+				  }, {
+					label: 'About',
+					translations: {
+						'zh-CN': '关于',
+					},
+					collapsed: true,
+					items: [{
+						label: 'Contribution',
+						translations: {
+							'zh-CN': '贡献',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'contribution'
+						}
+					}, {
+						label: 'Fundation',
+						translations: {
+							'zh-CN': '基金会',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'fund'
+						}
+					}, {
+						label: 'About',
+						translations: {
+							'zh-CN': '关于',
+						},
+						collapsed: true,
+						autogenerate: {
+							directory: 'about'
+						},
+					},
+				],
+			},
+		],
+		expressiveCode: { shiki: { langs: [markdocGrammar] } },
+		plugins: process.env.CHECK_LINKS
 				? [
 						starlightLinksValidator({
 							errorOnFallbackPages: false,
