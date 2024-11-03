@@ -1,164 +1,114 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightLinksValidator from 'starlight-links-validator';
+import markdocGrammar from './grammars/markdoc.tmLanguage.json';
 
-import expressiveCode from "astro-expressive-code";
+export const locales = {
+	root: { label: 'English', lang: 'en' },
+	'zh-cn': { label: '简体中文', lang: 'zh-CN' },
+};
 
-// https://astro.build/config
+/* https://docs.netlify.com/configure-builds/environment-variables/#read-only-variables */
+const NETLIFY_PREVIEW_SITE = process.env.CONTEXT !== 'production' && process.env.DEPLOY_PRIME_URL;
+
+const site = NETLIFY_PREVIEW_SITE || 'https://starlight.astro.build/';
+const ogUrl = new URL('og.jpg?v=1', site).href;
+const ogImageAlt = 'Make your docs shine with Starlight';
+
 export default defineConfig({
-  base: '',
-  i18n: {
-    defaultLocale: "zh-cn",
-    locales: ["zh-cn", "en"],
-    routing: {
-      prefixDefaultLocale: false
-    }
-  },
-  integrations: [expressiveCode(), starlight({
-    title: 'airdb.wiki',
-    social: {
-      github: 'https://github.com/airdb-wiki/airdb-wiki.github.io',
-      discord: 'https://discord.com/invite/Mp4xttEqnF'
-    },
-    sidebar: [{
-      label: 'Start Here',
-      collapsed: true,
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Guide',
-        link: '/guides/example',
-        badge: 'Welcome'
-      }, {
-        label: 'Today',
-        link: '/guides/today',
-        badge: 'New'
-      }]
-    }, {
-      label: 'AI',
-      collapsed: true,
-      autogenerate: {
-        directory: 'ai'
-      }
-    }, {
-      label: 'Blockchain',
-      collapsed: true,
-      autogenerate: {
-        directory: 'blockchain'
-      }
-    }, {
-      label: 'Cloud Computing',
-      collapsed: true,
-      items: [{
-        label: 'Network',
-        collapsed: true,
-        autogenerate: {
-          directory: 'network'
-        }
-      }, {
-        label: 'OS',
-        collapsed: true,
-        autogenerate: {
-          directory: 'os'
-        }
-      }, {
-        label: 'Gateway',
-        collapsed: true,
-        autogenerate: {
-          directory: 'gateway'
-        }
-      }, {
-        label: 'Docker',
-        collapsed: true,
-        autogenerate: {
-          directory: 'cloud/docker'
-        }
-      }]
-    }, {
-      label: 'Data',
-      collapsed: true,
-      autogenerate: {
-        directory: 'data'
-      }
-    }, {
-      label: 'Energy',
-      collapsed: true,
-      autogenerate: {
-        directory: 'energy'
-      }
-    }, {
-      label: 'Fintech',
-      collapsed: true,
-      autogenerate: {
-        directory: 'fintech'
-      }
-    }, {
-      label: 'Security',
-      collapsed: true,
-      autogenerate: {
-        directory: 'security'
-      }
-    }, {
-      label: 'DevOps',
-      collapsed: true,
-      autogenerate: {
-        directory: 'devops'
-      }
-    }, {
-      label: 'Team',
-      collapsed: true,
-      items: [{
-        label: 'Team Management',
-        collapsed: true,
-        autogenerate: {
-          directory: 'mgmt'
-        }
-      }, {
-        label: 'Culture',
-        collapsed: true,
-        autogenerate: {
-          directory: 'culture'
-        }
-      }, {
-        label: 'Interview',
-        collapsed: true,
-        autogenerate: {
-          directory: 'interview'
-        }
-      }, {
-        label: 'Style',
-        collapsed: true,
-        autogenerate: {
-          directory: 'style'
-        }
-      }]
-    }, {
-      label: 'Academy',
-      collapsed: true,
-      autogenerate: {
-        directory: 'academy'
-      }
-    }, {
-      label: 'About',
-      collapsed: true,
-      items: [{
-        label: 'Contribution',
-        collapsed: true,
-        autogenerate: {
-          directory: 'contribution'
-        }
-      }, {
-        label: 'Fundation',
-        collapsed: true,
-        autogenerate: {
-          directory: 'fund'
-        }
-      }, {
-        label: 'About',
-        collapsed: true,
-        autogenerate: {
-          directory: 'about'
-        }
-      }]
-    }]
-  })]
+	site,
+	trailingSlash: 'always',
+	integrations: [
+		starlight({
+			title: 'Starlight',
+			logo: {
+				light: '/src/assets/logo-light.svg',
+				dark: '/src/assets/logo-dark.svg',
+				replacesTitle: true,
+			},
+			editLink: {
+				baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
+			},
+			social: {
+				github: 'https://github.com/withastro/starlight',
+				discord: 'https://astro.build/chat',
+			},
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://cdn.usefathom.com/script.js',
+						'data-site': 'EZBHTSIG',
+						defer: true,
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'og:image', content: ogUrl },
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'og:image:alt', content: ogImageAlt },
+				},
+			],
+			customCss: process.env.NO_GRADIENTS ? [] : ['./src/assets/landing.css'],
+			locales,
+			sidebar: [
+				{
+					label: 'Start Here',
+					translations: {
+						'zh-CN': '从这里开始',
+					},
+					items: [
+						'getting-started',
+						'manual-setup',
+						{
+							label: 'Environmental Impact',
+							slug: 'environmental-impact',
+							translations: {
+								'zh-CN': '环境影响',
+							},
+						},
+					],
+				},
+				{
+					label: 'Guides',
+					translations: {
+						'zh-CN': '指南',
+					},
+					autogenerate: { directory: 'guides' },
+				},
+				{
+					label: 'Components',
+					translations: {
+						'zh-CN': '组件',
+					},
+					autogenerate: { directory: 'components' },
+				},
+				{
+					label: 'Reference',
+					translations: {
+						'zh-CN': '参考',
+					},
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Resources',
+					translations: {
+						'zh-CN': '资源',
+					},
+					autogenerate: { directory: 'resources' },
+				},
+			],
+			expressiveCode: { shiki: { langs: [markdocGrammar] } },
+			plugins: process.env.CHECK_LINKS
+				? [
+						starlightLinksValidator({
+							errorOnFallbackPages: false,
+							errorOnInconsistentLocale: true,
+						}),
+					]
+				: [],
+		}),
+	],
 });

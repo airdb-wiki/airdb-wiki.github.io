@@ -1,20 +1,31 @@
 {
-  "name": "airdb.wiki",
+  "name": "starlight-docs",
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "test": "start-server-and-test 'pnpm preview' http://localhost:4321 'pnpm pa11y'",
+    "pa11y": "pa11y-ci --sitemap 'http://localhost:4321/sitemap-0.xml' --sitemap-find 'https://starlight.astro.build' --sitemap-replace 'http://localhost:4321' --sitemap-exclude '/(de|zh-cn|fr|es|pt-br|pt-pt|it|id|ko|ru|tr|hi|da|uk)/.*'",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "typecheck": "tsc --noEmit",
+    "astro": "astro",
+    "lunaria:build": "lunaria build",
+    "grammars": "node grammars/generate.mjs"
   },
   "dependencies": {
+    "@astro-community/astro-embed-youtube": "^0.5.5",
     "@astrojs/starlight": "^0.28.5",
+    "@lunariajs/core": "^0.1.1",
+    "@types/culori": "^2.1.1",
     "astro": "^4.16.8",
-    "astro-expressive-code": "^0.30.1",
-    "sharp": "^0.32.6",
-    "sitemap@3.0.3": "link:astrojs/sitemap@3.0.3",
-    "sitemap@latest": "link:astrojs/sitemap@latest"
+    "culori": "^4.0.1",
+    "glob": "^11.0.0",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "starlight-links-validator": "^0.12.4"
   }
 }

@@ -1,0 +1,49 @@
+version: '3'
+
+tasks:
+  default:
+    desc: Show help messages
+    silent: true
+    cmds:
+      - echo "Welcome to use go-task!"
+      - echo
+      - |
+        echo "Available tasks:"
+        task --list | awk 'NR>1 {print "  " $0}'
+
+  install:
+    desc: Install dependencies
+    cmds:
+      - pnpm install
+      - pnpm add -D starlight-links-validator
+
+  update:
+    desc: Update astro to the latest version
+    cmds:
+      - pnpm update
+
+  upgrade:
+    desc: Update dependencies to their latest version
+    cmds:
+      - pnpm upgrade @astrojs/starlight --latest
+
+  clean:
+    desc: Clean pnpm and node modules
+    cmds:
+      - rm -rf node_modules
+      - rm -rf pnpm-lock.yaml
+
+  dev:
+    desc: Start development server
+    cmds:
+      - pnpm dev
+
+  build:
+    desc: Build for production
+    cmds:
+      - pnpm build
+
+  lint:
+    desc: Run linter
+    cmds:
+      - pnpm lint
