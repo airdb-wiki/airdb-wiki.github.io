@@ -16,12 +16,12 @@
     "grammars": "node grammars/generate.mjs"
   },
   "dependencies": {
-    "@astro-community/astro-embed-youtube": "^0.5.5",
-    "@astrojs/starlight": "^0.28.5",
+    "@astro-community/astro-embed-youtube": "^0.5.6",
+    "@astrojs/starlight": "^0.29.0",
     "@lunariajs/core": "^0.1.1",
     "@types/culori": "^2.1.1",
-    "astro": "^4.16.8",
-    "astro-expressive-code": "^0.38.0",
+    "astro": "^4.16.10",
+    "astro-expressive-code": "^0.38.3",
     "culori": "^4.0.1",
     "glob": "^11.0.0",
     "sharp": "^0.32.6"

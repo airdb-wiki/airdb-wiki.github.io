@@ -69,7 +69,15 @@ export default defineConfig({
 							},
 							link: '/guides/today',
 							badge: 'New',
-					  }]
+						},
+						{
+							label: '开发环境',
+							translations: {
+								'zh-CN': '开发环境',
+							},
+							link: '/guides/dev',
+						}
+					]
 				},
 				{
 					label: 'AI',
