@@ -27,13 +27,17 @@
     "favicon": {
       "external": [
         {
-          "link": "https://starlight.astro.build/favicon.svg",
+          "link": "https://airdb.com/favicon.svg",
           "type": "image/svg+xml"
         }
       ]
     },
-    "customCss": ["./lunaria/styles.css"],
-    "basesToHide": ["src/content/docs/"],
+    "customCss": [
+      "./lunaria/styles.css"
+    ],
+    "basesToHide": [
+      "src/content/docs/"
+    ],
     "ui": {
       "statusByLocale.heading": "Translation progress by locale",
       "statusByLocale.incompleteLocalizationLink": "incomplete translation",
@@ -42,6 +46,13 @@
       "statusByFile.heading": "Translation status by file"
     }
   },
-  "ignoreKeywords": ["lunaria-ignore", "typo", "en-only", "broken link", "i18nReady", "i18nIgnore"],
+  "ignoreKeywords": [
+    "lunaria-ignore",
+    "typo",
+    "en-only",
+    "broken link",
+    "i18nReady",
+    "i18nIgnore"
+  ],
   "renderer": "./lunaria/renderer.config.ts"
 }

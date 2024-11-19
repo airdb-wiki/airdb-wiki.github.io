@@ -31,6 +31,7 @@ export default defineConfig({
 		expressiveCode(),
 		starlight({
 			title: 'airdb.wiki',
+			favicon: '/favicon.png',
 			social: {
 				github: 'https://github.com/airdb/',
 				discord: 'https://discord.com/invite/Mp4xttEqnF'
@@ -39,7 +40,7 @@ export default defineConfig({
 				{
 					tag: 'script',
 					attrs: {
-						src: 'https://cdn.usefathom.com/script.js',
+						//src: 'https://cdn.usefathom.com/script.js',
 						'data-site': 'airdb',
 						defer: true,
 					},
@@ -55,12 +56,12 @@ export default defineConfig({
 					},
 					items: [
 						{
-						label: 'Guide',
-						translations: {
-							'zh-CN': '指南',
-						},
-						link: '/guides/example',
-						badge: 'Welcome',
+							label: 'Guide',
+							translations: {
+								'zh-CN': '指南',
+							},
+							link: '/guides/example',
+							badge: 'Welcome',
 						},
 						{
 							label: 'Today',
@@ -120,7 +121,7 @@ export default defineConfig({
 					},
 					collapsed: true,
 					autogenerate: {
-				  directory: 'security'
+						directory: 'security'
 					},
 				},
 				{
@@ -141,7 +142,7 @@ export default defineConfig({
 					},
 					collapsed: true,
 					autogenerate: {
-				  directory: 'devops'
+						directory: 'devops'
 					},
 				},
 				{
@@ -187,7 +188,7 @@ export default defineConfig({
 							directory: 'style'
 						}
 					}]
-				  }, {
+				}, {
 					label: 'Academy',
 					translations: {
 						'zh-CN': '学院',
@@ -196,25 +197,25 @@ export default defineConfig({
 					autogenerate: {
 						directory: 'academy'
 					}
-				  }, {
+				}, {
 					label: 'About',
 					translations: {
 						'zh-CN': '关于',
 					},
 					collapsed: true,
 					autogenerate: {
-							directory: 'about'
-						},
-			},
-		],
-		expressiveCode: { shiki: { langs: [markdocGrammar] } },
-		plugins: process.env.CHECK_LINKS
+						directory: 'about'
+					},
+				},
+			],
+			expressiveCode: { shiki: { langs: [markdocGrammar] } },
+			plugins: process.env.CHECK_LINKS
 				? [
-						starlightLinksValidator({
-							errorOnFallbackPages: false,
-							errorOnInconsistentLocale: true,
-						}),
-					]
+					starlightLinksValidator({
+						errorOnFallbackPages: false,
+						errorOnInconsistentLocale: true,
+					}),
+				]
 				: [],
 		}),
 	],

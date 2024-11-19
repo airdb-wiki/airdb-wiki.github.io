@@ -32,8 +32,8 @@ tasks:
   clean:
     desc: Clean pnpm and node modules
     cmds:
+      - rm -rf dist/ .astro/
       - rm -rf node_modules
-      - rm -rf pnpm-lock.yaml
 
   dev:
     desc: Start development server
