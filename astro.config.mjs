@@ -17,11 +17,11 @@ const ogUrl = new URL('og.jpg?v=1', site).href;
 const ogImageAlt = 'Make your docs shine with Starlight';
 
 
-const title = 'Learn. Build. Grow. Together.';
+const title = 'Learn. Build. Grow. Earn. Together.';
 const description =
-	'Learn from the web’s leading experts. Build something new. Grow your career. Let’s do it together.';
+	'Airdb Wiki - Learn from the web’s leading experts. Build something new. Grow your career. Let’s do it together.';
 
-const shareTitle = 'Learn With Jason';
+const shareTitle = 'Learn With Airdb Wiki';
 
 
 export default defineConfig({
