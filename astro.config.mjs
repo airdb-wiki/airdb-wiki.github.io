@@ -3,6 +3,8 @@ import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 import markdocGrammar from './grammars/markdoc.tmLanguage.json';
 import expressiveCode from 'astro-expressive-code';
+import mdx from '@astrojs/mdx';
+
 
 export const locales = {
 	root: { label: 'English', lang: 'en' },
@@ -29,6 +31,7 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		expressiveCode(),
+		mdx(),
 		starlight({
 			title: 'airdb.wiki',
 			favicon: '/favicon.png',
