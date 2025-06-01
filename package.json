@@ -20,7 +20,7 @@
     "@astrojs/mdx": "^4.0.3",
     "@astrojs/starlight": "^0.30.6",
     "@lunariajs/core": "^0.1.1",
-    "@types/culori": "^2.1.1",
+    "@types/culori": "^4.0.0",
     "astro": "^5.7.10",
     "astro-expressive-code": "^0.41.2",
     "culori": "^4.0.1",
