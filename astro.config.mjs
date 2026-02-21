@@ -35,10 +35,10 @@ export default defineConfig({
 		starlight({
 			title: 'airdb.wiki',
 			favicon: '/favicon.png',
-			social: {
-				github: 'https://github.com/airdb/',
-				discord: 'https://discord.com/invite/Mp4xttEqnF'
-			},
+			social: [
+                { label: 'github', icon: 'github', href: 'https://github.com/airdb/' },
+                { label: 'discord', icon: 'discord', href: 'https://discord.com/invite/Mp4xttEqnF' }
+            ],
 			head: [
 				{
 					tag: 'script',
