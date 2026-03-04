@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astro-community/astro-embed-youtube':
-        specifier: ^0.5.6
-        version: 0.5.6(astro@5.18.0(@types/node@22.10.1)(jiti@1.21.6)(rollup@4.59.0)(typescript@5.7.2))
+        specifier: ^0.5.10
+        version: 0.5.10
       '@astrojs/mdx':
         specifier: ^4.3.6
         version: 4.3.6(astro@5.18.0(@types/node@22.10.1)(jiti@1.21.6)(rollup@4.59.0)(typescript@5.7.2))
@@ -45,10 +45,8 @@ importers:
 
 packages:
 
-  '@astro-community/astro-embed-youtube@0.5.6':
-    resolution: {integrity: sha512-/mRfCl/eTBUz0kmjD1psOy0qoDDBorVp0QumUacjFcIkBullYtbeFQ2ZGZ+3N/tA6cR/OIyzr2QA4dQXlY6USg==}
-    peerDependencies:
-      astro: ^2.0.0 || ^3.0.0-beta || ^4.0.0-beta || ^5.0.0-beta
+  '@astro-community/astro-embed-youtube@0.5.10':
+    resolution: {integrity: sha512-hVlx77KQLjKzElVQnrU5znQ5/E60keVSAPrhuWvQQHuqva5auJtt8YBpOThkwDMuEKXjQybEF1/3C07RZ8MAOQ==}
 
   '@astrojs/compiler@2.13.1':
     resolution: {integrity: sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg==}
@@ -1392,8 +1390,8 @@ packages:
     resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
 
-  lite-youtube-embed@0.3.3:
-    resolution: {integrity: sha512-gFfVVnj6NRjxVfJKo3qoLtpi0v5mn3AcR4eKD45wrxQuxzveFJUb+7Cr6uV6n+DjO8X3p0UzPPquhGt0H/y+NA==}
+  lite-youtube-embed@0.3.4:
+    resolution: {integrity: sha512-aXgxpwK7AIW58GEbRzA8EYaY4LWvF3FKak6B9OtSJmuNyLhX2ouD4cMTxz/yR5HFInhknaYd2jLWOTRTvT8oAw==}
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -2195,10 +2193,9 @@ packages:
 
 snapshots:
 
-  '@astro-community/astro-embed-youtube@0.5.6(astro@5.18.0(@types/node@22.10.1)(jiti@1.21.6)(rollup@4.59.0)(typescript@5.7.2))':
+  '@astro-community/astro-embed-youtube@0.5.10':
     dependencies:
-      astro: 5.18.0(@types/node@22.10.1)(jiti@1.21.6)(rollup@4.59.0)(typescript@5.7.2)
-      lite-youtube-embed: 0.3.3
+      lite-youtube-embed: 0.3.4
 
   '@astrojs/compiler@2.13.1': {}
 
@@ -3646,7 +3643,7 @@ snapshots:
 
   klona@2.0.6: {}
 
-  lite-youtube-embed@0.3.3: {}
+  lite-youtube-embed@0.3.4: {}
 
   longest-streak@3.1.0: {}
 
